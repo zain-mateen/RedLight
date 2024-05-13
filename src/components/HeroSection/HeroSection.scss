@@ -1,0 +1,211 @@
+@import '../../common-style/variables.scss';
+
+.HeroSection{
+    margin: 112px 0;
+
+    @media (max-width: 992px) {
+        margin: 72px 0;
+    }
+
+    @media (max-width: 575px) {
+        margin: 48px 0;
+    }
+
+    .container{
+
+        .row_custom{
+            align-items: center;
+            gap: 36px 0;
+
+            .col_content_otr{
+
+                .col_content_inr{
+
+                    .title{
+                        color: $White;
+                    }
+
+                    .heading{
+                        color: $White;
+                        margin: 12px 0 20px;
+
+                        @media (max-width: 768px) {
+                            margin: 8px 0 12px;
+                        }
+                    }
+
+                    .desc{
+                        color: $Grey_text;
+                    }
+
+                    .action_main{
+                        display: flex;
+                        align-items: center;
+                        gap: 0 12px;
+                        margin: 40px 0 170px;
+
+                        @media (max-width: 992px) {
+                            margin: 32px 0;
+                        }
+
+                        .action_otr{
+
+                            .play_btn{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 64px;
+                                height: 64px;
+                                border-radius: 4px;
+                                border: 2px solid $White;
+                                cursor: pointer;
+                                transition: .3s;
+
+                                @media (max-width: 768px) {
+                                    width: 48px;
+                                    height: 48px;
+                                }
+
+
+                                &:hover{
+                                    border: 2px solid $Primary_color;
+
+                                    .icon{
+                                        color: $Primary_color;
+                                    }
+                                }
+
+                                .icon{
+                                    font-size: 30px;
+                                    color: $White;
+                                    transition: .3s;
+
+                                    @media (max-width: 768px) {
+                                        font-size: 24px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .social_otr{
+                        display: flex;
+                        align-items: center;
+                        gap: 0 16px;
+
+                        .social_line{
+                            width: 48px;
+                            height: 3px;
+                            background-color: $Grey_text;
+                            border-radius: 4px;
+                        }
+
+                        .social_ul{
+                            display: flex;
+                            align-items: center;
+                            gap: 0 16px;
+
+                            .social_li{
+
+                                .social_a{
+
+                                    .social_icon{
+                                        font-size: 20px;
+                                        color: $Grey_text;
+                                        transition: .3s;
+
+                                        &:hover{
+                                            color: $Primary_color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .col_img_otr{
+
+                .col_img_inr{
+                    display: flex;
+                    justify-content: center;
+
+                    .img{
+                        width: 100%;
+
+                        @media (max-width: 992px) {
+                            width: 60%;
+                        }
+
+                        @media (max-width: 576px) {
+                            width: 80%;
+                        }
+
+                        @media (max-width: 320px) {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .row_custom2{
+            margin-top: 120px;
+            gap: 36px 0;
+
+            @media (max-width: 576px) {
+                margin-top: 72px;
+            }
+        }
+    }
+}
+
+.col_heroSectionCart_otr{
+
+    &:not(:last-child){
+        border-right: 1px dashed $Grey_text2;
+
+        @media (max-width: 768px) {
+            border: none;
+        }
+    }
+
+    .col_heroSectionCart_inr{
+        padding: 0 24px;
+
+        @media (max-width: 992px) {
+            padding: 0 12px;
+        }
+
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+
+        .title_otr{
+            display: flex;
+
+            @media (max-width: 768px) {
+                justify-content: center;
+            }
+
+            .title{
+                padding: 6px 20px 2px;
+                text-transform: uppercase;
+                background-color: $Black_shade;
+                border-radius: 4px;
+                color: $Yellow_shade;
+
+            }
+        }
+
+        .desc{
+            color: $Grey_text;
+            margin: 24px 0 18px;
+        }   
+
+        .date{
+            color: $Grey_text;
+        }
+    }
+}

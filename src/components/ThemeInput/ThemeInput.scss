@@ -1,0 +1,79 @@
+@import '../../common-style/variables.scss';
+
+.NewsLetter_input{
+    padding: 20px 16px;
+    width: 100%;
+    background-color: $White;
+    border: 2px solid transparent;
+    font-size: $font-size-18px;
+    line-height: $line-height-32px;
+    font-family: $font-family-Jost-Regular;
+    color: $Grey_text2;
+    border-radius: 4px;
+    outline: none;
+    transition: .3s;
+
+    &:hover{
+        border: 2px solid $Primary_color;
+    }
+
+    @media (max-width: 768px) {
+        padding: 14px 16px;
+    }
+
+    &:focus{
+        border: 2px solid $Primary_color;
+    }
+}
+
+.Primary_input{
+    padding: 20px 16px;
+    width: 100%;
+    background-color: $Black_shade3;
+    border: 2px solid transparent;
+    font-size: $font-size-18px;
+    line-height: $line-height-32px;
+    font-family: $font-family-Jost-Regular;
+    color: $Grey_text2;
+    border-radius: 4px;
+    outline: none;
+    transition: .3s;
+
+    &:hover{
+        border: 2px solid $Primary_color;
+    }
+
+    @media (max-width: 768px) {
+        padding: 14px 16px;
+    }
+
+    &:focus{
+        border: 2px solid $Primary_color;
+    }
+}
+
+.search_input{
+    padding: 14px 12px;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid $Grey_text;
+    font-size: $font-size-18px;
+    line-height: $line-height-32px;
+    font-family: $font-family-Jost-Regular;
+    color: $Grey_text2;
+    border-radius: 4px;
+    outline: none;
+    transition: .3s;
+
+    &:hover{
+        border: 2px solid $Primary_color;
+    }
+
+    @media (max-width: 768px) {
+        padding: 14px 16px;
+    }
+
+    &:focus{
+        border: 2px solid $Primary_color;
+    }
+}

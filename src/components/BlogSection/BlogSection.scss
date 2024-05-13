@@ -1,0 +1,95 @@
+@import '../../common-style/variables.scss';
+
+.BlogSection{
+    margin: 112px 0;
+
+    .container{
+
+        .row_custom{
+            gap: 36px 0;
+        }
+    }
+}
+
+.col_blogCart_otr{
+
+    .col_blogCart_inr{
+        background-color: $Black_shade2;
+        padding: 32px 24px 36px;
+        height: 510px;
+        border-radius: 12px;
+        border-bottom: 4px solid transparent;
+        transition: .3s;
+
+        @media (max-width: 1400px) {
+            height: 460px;
+        }
+
+        @media (max-width: 992px) {
+            height: auto;
+        }
+
+        @media (max-width: 576px) {
+            border-radius: 8px;
+            padding: 24px 16px 28px;
+        }
+
+        &:hover{
+            border-bottom: 4px solid $Primary_color;
+        }
+
+        .img_otr{
+            width: 100%;
+            height: 250px;
+            border-radius: 12px;
+            overflow: hidden;
+
+            @media (max-width: 1400px) {
+                height: 200px;
+            }
+
+            @media (max-width: 576px) {
+                border-radius: 8px;
+            }
+
+            @media (max-width: 420px) {
+                height: 170px;
+            }
+
+            .img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                transition: .3s;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .content_otr{
+            margin-top: 24px;
+
+            .heading{
+                color: $White;
+                transition: .3s;
+
+                &:hover{
+                    color: $Primary_color;
+                }
+            }
+
+            .desc{
+                color: $Grey_text;
+                margin-top: 12px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+}

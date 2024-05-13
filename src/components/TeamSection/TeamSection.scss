@@ -1,0 +1,101 @@
+@import '../../common-style/variables.scss';
+
+.TeamSection{
+    margin: 112px 0;
+
+    @media (max-width: 992px) {
+        margin: 72px 0;
+    }
+
+    @media (max-width: 575px) {
+        margin: 48px 0;
+    }
+
+    .container{
+        
+        .row_custom{
+            gap: 36px 0;
+        }
+    }
+}
+
+.col_teamCart_otr{
+
+    .col_teamCart_inr{
+
+        .img_otr{
+            width: 100%;
+
+            .img{
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+                filter: brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
+                opacity: .5;
+                transition: .3s;
+
+                &:hover{
+                    filter: brightness(100%) contrast(98%) saturate(137%) blur(0) hue-rotate(0deg) !important;
+                    opacity: 1;
+                }
+            }
+        }
+
+        .content_otr{
+            margin-top: 24px;
+
+            .heading{
+                color: $White;
+                transition: .3s;
+
+                &:hover{
+                    color: $Primary_color;
+                }
+            }
+
+            .text{
+                color: $Primary_color;
+                margin: 8px 0 12px;
+            }
+
+            .desc{
+                color: $Grey_text;
+            }
+
+            .social_ul{
+                display: flex;
+                align-items: center;
+                gap: 20px 16px;
+                margin-top: 24px;
+
+                .social_li{
+
+                    .social_linkk{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 40px;
+                        height: 40px;
+                        background-color: #191919;
+                        border-radius: 2px;
+                        transition: .3s;
+
+                        &:hover{
+                            background-color: $Primary_color;
+
+                            .social_icon{
+                                color: $White;
+                            }
+                        }
+
+                        .social_icon{
+                            font-size: 20px;
+                            color: $Grey_text;
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

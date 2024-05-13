@@ -1,0 +1,153 @@
+@import '../../common-style/variables.scss';
+
+.ChooseUsSection{
+    margin: 112px 0;
+    position: relative;
+
+    @media (max-width: 992px) {
+        margin: 72px 0;
+    }
+
+    @media (max-width: 575px) {
+        margin: 48px 0;
+    }
+
+    .container{
+
+        .row_custom{
+            gap: 36px 0;
+        }
+    }
+
+    .pos_img{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+
+        @media (max-width: 576px) {
+            width: 100%;
+        }
+    }
+}
+
+.col_chooseUsCart_otr{
+
+    .col_chooseUsCart_inr{
+        padding: 36px 28px 20px;
+        background-color: $Black_shade2;
+        border-radius: 8px;
+        border-bottom: 4px solid transparent;
+        transition: .3s;
+
+        @media (max-width: 576px) {
+            padding: 32px 20px 16px;
+            border-radius: 6px;
+        }
+
+        &:hover{
+            background-image: linear-gradient( 143deg, $Primary_color -24%, $Black_shade2 20% );
+            border-bottom: 2px solid $Primary_color;
+            transform: translateY(-15px);
+
+            .icon_otr{
+                background-color: $Primary_color;
+
+                .icon{
+                    color: $White;
+                    filter: brightness(0) invert(1) !important;
+                    -webkit-filter: grayscale(100%);
+                    filter: gray;
+                }
+            }
+
+            .content_otr{
+
+                .heading{
+                    color: $White;
+                }
+            }
+        }
+
+        .icon_otr{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background-color: #202020;
+            border-radius: 4px;
+            transition: .3s;
+
+            .icon{
+                color: $Grey_text2;
+                width: 32px;
+                height: 32px;
+                object-fit: contain;
+                object-position: center;
+                transition: .3s;
+            }
+        }
+
+        .content_otr{
+            
+            .heading{
+                color: $Grey_text2;
+                margin: 24px 0 12px;
+                transition: .3s;
+
+                @media (max-width: 576px) {
+                    margin: 12px 0 8px;
+                }
+
+                &:hover{
+                    color: $Primary_color;
+                }
+            }
+
+            .desc{
+                color: $Grey_text2;
+            }
+
+            .action_otr{
+                display: flex;
+                margin-top: 32px;
+
+                @media (max-width: 576px) {
+                    margin-top: 20px;
+                }
+
+                .learnMore_btn{
+                    display: flex;
+                    align-items: center;
+                    justify-content: baseline;
+                    gap: 0 2px;
+                    transition: .3s;
+
+                    &:hover{
+
+                        .learnMore_btn_text{
+                            color: $Primary_color;
+                        }
+
+                        .learnMore_btn_icon{
+                            color: $Primary_color;
+                        }
+                    }
+
+                    .learnMore_btn_text{
+                        color: $Grey_text;
+                        transition: .3s;
+                    }
+
+                    .learnMore_btn_icon{
+                        font-size: 24px;
+                        color: $Grey_text;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+}

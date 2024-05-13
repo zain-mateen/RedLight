@@ -1,0 +1,148 @@
+@import '../../common-style/variables.scss';
+
+.CyberSecuritySection{
+    margin: 112px 0;
+
+    @media (max-width: 992px) {
+        margin: 72px 0;
+    }
+
+    @media (max-width: 575px) {
+        margin: 48px 0;
+    }
+
+    .container{
+
+        .row_custom{
+            align-items: center;
+            gap: 36px 0;
+
+            @media (max-width: 992px) {
+                flex-direction: column-reverse;
+            }
+
+            .col_img_otr{
+
+                .col_img_inr{
+                    display: flex;
+                    justify-content: center;
+
+                    .img{
+                        width: 100%;
+
+                        @media (max-width: 992px) {
+                            width: 60%;
+                        }
+
+                        @media (max-width: 768px) {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+
+            .col_content_otr{
+
+                .col_content_inr{
+
+                    .heading{
+                        color: $White;
+
+                        .heading_inr{
+                            color: $Primary_color;
+                        }
+                    }
+
+                    .desc{
+                        color: $Grey_text;
+                    }
+
+                    .desc_1{
+                        margin: 20px 0 16px;
+                    }
+
+                    .action_otr{
+                        margin-top: 32px;
+                    }
+                }
+            }
+        }
+
+        .state_row_custom{
+            gap: 36px 0;
+        }
+    }
+}
+
+.col_state_box_otr{
+
+    .col_state_box_inr{
+        padding: 32px 20px 20px;
+        background-color: $Black_shade2;
+        border-radius: 8px;
+        border-bottom: 4px solid transparent;
+        transition: .3s;
+
+        // @media (max-width: 576px) {
+        //     padding: 32px 20px 16px;
+        //     border-radius: 6px;
+        // }
+
+        &:hover{
+            background-image: linear-gradient( 143deg, $Primary_color -24%, $Black_shade2 20% );
+            border-bottom: 2px solid $Primary_color;
+            transform: translateY(-15px);
+
+            .icon_otr{
+                background-color: $Primary_color;
+
+                .icon{
+                    color: $White;
+                    filter: brightness(0) invert(1) !important;
+                    -webkit-filter: grayscale(100%);
+                    filter: gray;
+                }
+            }
+
+            .content_otr{
+
+                .heading{
+                    color: $White;
+                }
+            }
+        }
+
+        .icon_otr{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background-color: #202020;
+            border-radius: 4px;
+            transition: .3s;
+
+            .icon{
+                color: $Grey_text2;
+                width: 32px;
+                height: 32px;
+                object-fit: contain;
+                object-position: center;
+                transition: .3s;
+            }
+        }
+
+        .content_otr{
+            margin-top: 20px;
+
+            .heading{
+                color: $White;
+            }
+
+            .text{
+                color: $Grey_text;
+                margin-top: 2px;
+            }
+        }
+    }
+}

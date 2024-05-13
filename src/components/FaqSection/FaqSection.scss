@@ -1,0 +1,161 @@
+@import '../../common-style/variables.scss';
+
+.FaqSection{
+    margin: 112px 0;
+
+    @media (max-width: 992px) {
+        margin: 72px 0;
+    }
+
+    @media (max-width: 575px) {
+        margin: 48px 0;
+    }
+
+    .container{
+
+        .row_custom{
+            align-items: center;
+            gap: 36px 0;
+
+            @media (max-width: 992px) {
+                flex-direction: column-reverse;
+            }
+
+            .col_img_otr{
+
+                .col_img_inr{
+                    display: flex;
+                    justify-content: center;
+
+                    .img{
+                        width: 100%;
+
+                        @media (max-width: 992px) {
+                            width: 60%;
+                        }
+
+                        @media (max-width: 768px) {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+
+            .col_faq_otr{
+
+                .col_faq_inr{
+
+                    .heading{
+                        color: $White;
+                        margin-bottom: 36px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.accordion{
+    &:not(:last-child){
+        margin-bottom: 16px;
+    }
+}
+
+.Faq_accordion_otr{
+
+    .Accordion_item {
+        display: flex;
+        align-items: center;
+        gap: 0 30px;
+
+        @media (max-width: 1440px) {
+            gap: 0 20px;
+        }
+
+        .Accordion_header_body{
+            flex: 1;
+            background-color: $Black_shade2;
+            border-radius: 6px;
+
+            .accordion-button{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 0 20px;
+                font-size: 20px;
+                line-height: 28px;
+                font-family: $font-family-Jost-SemiBold;
+                padding: 14px 30px 14px 24px;
+                border-radius: 0;
+                color: $Grey_text;
+                background-color: transparent;
+                transition: .3s;
+                width: 100%;
+                
+                @media (max-width: 1400px) {
+                    font-size: 18px;
+                    line-height: 22px;
+                    padding: 14px 20px 14px 20px ;
+                }
+
+                @media (max-width: 575px) {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+                svg{
+                    transition: .3s;
+                }
+
+                &:focus {
+                    box-shadow: none;
+                }
+        
+                &::after {
+                    display: none;
+                }
+        
+                &:not(.collapsed) {
+                    box-shadow: none;
+                    color: $White;
+                    border-radius: 6px;
+                    background-color: $Primary_color;
+        
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                .collapsed{
+                    border-radius: 0;
+                }
+            }
+
+            .accordion-body{
+                padding: 24px;
+                font-size: 18px;
+                line-height: 28px;
+                font-family: $font-family-Jost-Regular;
+                color: $Grey_text;
+                background-color: #202020;
+
+                @media (max-width: 1440px) {
+                  font-size: 16px;
+                  line-height: 24px;
+                }
+              
+                @media (max-width: 575px) {
+                  font-size: 14px;
+                  line-height: 21px;
+                }
+            }
+        }
+    }
+
+    .accordion-item{
+        background-color: #202020;
+        border: none;
+        border-radius: 8px;
+    }
+}
+

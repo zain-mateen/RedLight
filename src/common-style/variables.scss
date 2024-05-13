@@ -1,0 +1,127 @@
+/* =================================
+        color variable's
+================================= */
+
+$White: #FFFFFF;
+$Primary_color: #f43334;
+$Grey_text: #777777;
+$Grey_text2: #999999;
+$Grey_bg_color: #77777778;
+$Black_shade: #161616;
+$Black_shade2: #191919;
+$Black_shade3: #202020;
+$Yellow_shade: #eb9500;
+
+/* =================================
+        Font Size variabe's
+================================= */
+
+$font-size-14px: 14px;
+$font-size-16px: 16px;
+$font-size-18px: 18px;
+$font-size-20px: 20px;
+$font-size-24px: 24px;
+$font-size-40px: 40px;
+$font-size-65px: 65px;
+// $font-size- : ;
+// $font-size- : ;
+// $font-size- : ;
+
+/* =================================
+        Line Height variabe's
+================================= */
+
+$line-height-24px: 24px;
+$line-height-28px: 28px;
+$line-height-32px: 32px;
+$line-height-48px: 48px;
+
+/*  ====================================
+        Font Family Variable's
+====================================  */
+
+$font-family-Jost-Bold: "Jost-Bold";
+$font-family-Jost-SemiBold: "Jost-SemiBold";
+$font-family-Jost-Medium: "Jost-Medium";
+$font-family-Jost-Regular: "Jost-Regular";
+
+
+
+
+// --e-global-color-primary: #FFFFFF;
+// --e-global-color-secondary: #FFFFFF;
+// --e-global-color-text: #999999;
+// --e-global-color-accent: #F43334;
+// --e-global-color-5e746a7: #C12E2F;
+// --e-global-color-6d2c1e2: #FFFEFE;
+// --e-global-color-212aa62: #999999;
+// --e-global-color-7ce4086: #EB9500;
+// --e-global-color-f9b7334: #CA2F30;
+// --e-global-color-7e0315f: #202020;
+// --e-global-color-c7e0c68: #4A2424;
+// --e-global-color-15bb355: #191919;
+// --e-global-color-621a596: #777777;
+// --e-global-color-a50a99a: #AD2D2D;
+// --e-global-color-957fa4a: #101010;
+// --e-global-color-ebfae16: #161616;
+// --e-global-typography-primary-font-family: "Jost";
+// --e-global-typography-primary-font-weight: 600;
+// --e-global-typography-primary-line-height: 1.1em;
+// --e-global-typography-secondary-font-family: "Jost";
+// --e-global-typography-secondary-font-weight: 400;
+// --e-global-typography-secondary-line-height: 1.1em;
+// --e-global-typography-text-font-family: "Jost";
+// --e-global-typography-text-font-size: 18px;
+// --e-global-typography-text-font-weight: 400;
+// --e-global-typography-text-line-height: 1.5em;
+// --e-global-typography-accent-font-family: "Jost";
+// --e-global-typography-accent-font-size: 18px;
+// --e-global-typography-accent-font-weight: 600;
+// --e-global-typography-accent-text-decoration: none;
+// --e-global-typography-accent-line-height: 1.1em;
+// --e-global-typography-f60c399-font-family: "Jost";
+// --e-global-typography-f60c399-font-size: 65px;
+// --e-global-typography-f60c399-font-weight: 600;
+// --e-global-typography-f60c399-line-height: 1.1em;
+// --e-global-typography-f60c399-letter-spacing: -1.4px;
+// --e-global-typography-f4c4925-font-family: "Jost";
+// --e-global-typography-f4c4925-font-size: 50px;
+// --e-global-typography-f4c4925-font-weight: 600;
+// --e-global-typography-f4c4925-line-height: 1.1em;
+// --e-global-typography-7551361-font-family: "Jost";
+// --e-global-typography-7551361-font-size: 40px;
+// --e-global-typography-7551361-font-weight: 700;
+// --e-global-typography-7551361-line-height: 1.1em;
+// --e-global-typography-7551361-letter-spacing: 0.4px;
+// --e-global-typography-fc8085a-font-family: "Jost";
+// --e-global-typography-fc8085a-font-size: 24px;
+// --e-global-typography-fc8085a-font-weight: 700;
+// --e-global-typography-fc8085a-line-height: 1.1em;
+// --e-global-typography-fc8085a-letter-spacing: 0.4px;
+// --e-global-typography-8c31320-font-family: "Jost";
+// --e-global-typography-8c31320-font-size: 20px;
+// --e-global-typography-8c31320-font-weight: 600;
+// --e-global-typography-8c31320-line-height: 1.1em;
+// --e-global-typography-00fff5a-font-family: "Jost";
+// --e-global-typography-00fff5a-font-size: 12px;
+// --e-global-typography-00fff5a-font-weight: 600;
+// --e-global-typography-00fff5a-line-height: 1.1em;
+// --e-global-typography-97377d1-font-family: "Jost";
+// --e-global-typography-97377d1-font-size: 20px;
+// --e-global-typography-97377d1-font-weight: 400;
+// --e-global-typography-97377d1-line-height: 1.5em;
+// --e-global-typography-d067ff2-font-family: "Jost";
+// --e-global-typography-d067ff2-font-size: 14px;
+// --e-global-typography-d067ff2-font-weight: 400;
+// --e-global-typography-d067ff2-line-height: 1.5em;
+// --e-global-typography-43708dc-font-family: "Jost";
+// --e-global-typography-43708dc-font-size: 16px;
+// --e-global-typography-43708dc-font-weight: 400;
+// --e-global-typography-43708dc-line-height: 1.5em;
+// --e-font-family: var(--e-global-typography-accent-font-family), Sans-serif;
+// --e-font-size: var(--e-global-typography-accent-font-size);
+// --e-font-weight: var(--e-global-typography-accent-font-weight);
+// --e-text-decoration: var(--e-global-typography-accent-text-decoration);
+// --e-line-height: var(--e-global-typography-accent-line-height);
+
+

@@ -1,0 +1,67 @@
+@import '../../common-style/variables.scss';
+
+.CyberSecuritySolutionSection{
+    margin: 112px 0;
+
+    @media (max-width: 992px) {
+        margin: 72px 0;
+    }
+
+    @media (max-width: 575px) {
+        margin: 48px 0;
+    }
+
+    .container{
+
+        .row_custom{
+            align-items: center;
+            gap: 36px 0;
+
+            .col_content_otr{
+
+                .col_content_inr{
+
+                    .heading{
+                        color: $White;
+
+                        .heading_inr{
+                            color: $Primary_color;
+                        }
+                    }
+
+                    .desc{
+                        color: $Grey_text;
+                    }
+
+                    .desc_1{
+                        margin: 20px 0 16px;
+                    }
+
+                    .action_otr{
+                        margin-top: 32px;
+                    }
+                }
+            }
+
+            .col_img_otr{
+
+                .col_img_inr{
+                    display: flex;
+                    justify-content: center;
+
+                    .img{
+                        width: 100%;
+
+                        @media (max-width: 992px) {
+                            width: 60%;
+                        }
+
+                        @media (max-width: 768px) {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
