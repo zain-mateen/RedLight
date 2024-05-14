@@ -1,0 +1,234 @@
+@import '../../common-style/variables.scss';
+
+.ProductDetail{
+    margin: 112px 0;
+
+    @media (max-width: 992px) {
+        margin: 72px 0;
+    }
+
+    @media (max-width: 576px) {
+        margin: 48px 0;
+    }
+
+    .container{
+
+        .row_custom{
+            align-items: center;
+            gap: 36px 0;
+
+            .col_img_otr{
+
+                .col_img_inr{
+                    display: flex;
+                    justify-content: center;
+
+                    .img{
+                        width: 100%;
+                        border-radius: 16px;
+                        
+                        @media (max-width: 992px) {
+                            width: 60%;
+                        }
+
+                        @media (max-width: 768px) {
+                            width: 70%;
+                        }
+
+                        @media (max-width: 576px) {
+                            width: 80%;
+                        }
+
+                        @media (max-width: 420px) {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .col_content_otr{
+
+                .col_content_inr{
+
+                    .heading{
+                        color: $White;
+                    }
+
+                    .price{
+                        font-size: 24px;
+                        line-height: 32px;
+                        font-family: $font-family-Jost-Regular;
+                        color: $White;
+                        margin: 10px 0 16px;
+                    }
+
+                    .desc{
+                        color: $Grey_text;
+                    }
+
+                    .quantity_btn_otr{
+                        margin: 24px 0;
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        gap: 8px 12px;
+
+                        .quantity_otr{
+                            display: flex;
+                            align-items: center;
+                            border: 2px solid $White;
+                            overflow: hidden;
+                            height: 64px;
+                            border-radius: 4px;
+
+                            @media (max-width: 768px) {
+                                height: 48px;
+                            }
+
+                            .quantity_text{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100px;
+                                height: 64px;
+                                color: $White;
+
+                                @media (max-width: 768px) {
+                                    height: 48px;
+                                    width: 70px;
+                                }
+                            }
+
+                            .increment_decrement_text{
+                                width: 64px;
+                                height: 64px;
+                                background-color: $White;
+                                border: none;
+                                outline: none;
+                                transition: .3s;
+
+                                @media (max-width: 768px) {
+                                    width: 48px;
+                                    height: 48px;
+                                }
+
+                                &:hover{
+                                    background-color: $Primary_color;
+
+                                    .icon{
+                                        color: $White;
+                                    }
+                                }
+
+                                .icon{
+                                    font-size: 24px;
+                                    color: $Primary_color;
+                                    transition: .3s;
+                                }
+                            }
+                        }
+                    }
+
+                    .text{
+                        color: $White;
+                        margin-bottom: 4px;
+                    }
+                }
+            }
+        }
+
+        .productDescription{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 48px 0;
+            
+            .product_heading_otr{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding-bottom: 36px;
+                border-bottom: 2px solid $White;
+
+                .product_heading{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px 32px;
+                    border-radius: 4px;
+                    color: $Grey_text;
+                    background-color: $White;
+
+                    @media (max-width: 420px) {
+                        padding: 6px 18px;
+                    }
+                }
+            }
+
+            .product_desc{
+                color: $Grey_text;
+                margin-top: 24px;
+            }
+        }
+
+        .RelatedProduct{
+
+            .RelatedProduct_wrapper{
+                text-align: center;
+                margin-bottom: 36px;
+
+                .RelatedProduct_heading{
+                    color: $White;
+                }
+            }
+
+            .row_custom2{
+                gap: 36px 0;
+            }
+        }
+
+        .form_otr{
+            margin-top: 48px;
+
+            .heading{
+                color: $White;
+            }
+
+            .input_main{
+                margin: 24px 0 32px;
+                display: flex;
+                flex-direction: column;
+                gap: 16px 0;
+
+                .textarea{
+                    padding: 20px 16px;
+                    width: 100%;
+                    background-color: $White;
+                    border: 2px solid transparent;
+                    font-size: $font-size-18px;
+                    line-height: $line-height-32px;
+                    font-family: $font-family-Jost-Regular;
+                    color: $Grey_text2;
+                    border-radius: 4px;
+                    outline: none;
+                    resize: none;
+                    height: 150px;
+                    transition: .3s;
+                
+                    &:hover{
+                        border: 2px solid $Primary_color;
+                    }
+                
+                    @media (max-width: 768px) {
+                        padding: 14px 16px;
+                    }
+                
+                }
+            }
+
+            .action_otr{
+
+            }
+        }
+    }
+}

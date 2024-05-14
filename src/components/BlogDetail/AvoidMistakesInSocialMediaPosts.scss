@@ -1,0 +1,174 @@
+@import '../../common-style/variables.scss';
+
+.AvoidMistakesInSocialMediaPosts{
+    margin: 112px 0;
+
+    @media (max-width: 992px) {
+        margin: 72px 0;
+    }
+
+    @media (max-width: 576px) {
+        margin: 48px 0;
+    }
+
+    .container{
+
+        .row_custom{
+            gap: 36px 0;
+
+            .col_blogContent_otr{
+
+                .col_blogContent_inr{
+
+                    .img_otr{
+
+                        .img{
+                            width: 100%;
+                            border-radius: 16px;
+
+                            @media (max-width: 768px) {
+                                border-radius: 12px;
+                            }
+
+                            @media (max-width: 576px) {
+                                border-radius: 8px;
+                            }
+                        }
+                    }
+
+                    .blogContent_detail{
+                        margin: 24px 0 48px;
+
+                        .heading{
+                            color: $White;
+                        }
+
+                        .author_date_main{
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            gap: 8px 24px;
+                            margin: 12px 0 16px;
+            
+                            .author_otr{
+                                display: flex;
+                                align-items: center;
+                                gap: 0 12px;
+            
+                                .icon_otr{
+            
+                                    .icon{
+                                        font-size: 24px;
+                                        color: $Grey_text;
+            
+                                        @media (max-width: 576px) {
+                                            font-size: 20px;
+                                        }
+                                    }
+                                }
+            
+                                .author_text{
+                                    color: $Grey_text;
+            
+                                    .author_text_inr{
+                                        margin-left: 6px;
+                                        color: $Grey_text;
+                                        cursor: pointer;
+                                        transition: .3s;
+            
+                                        &:hover{
+                                            color: $White;
+                                        }
+                                    }
+                                }
+                            }
+            
+                            .date_otr{
+                                display: flex;
+                                align-items: center;
+                                gap: 0 12px;
+            
+                                .icon_otr{
+            
+                                    .icon{
+                                        font-size: 24px;
+                                        color: $Grey_text;
+            
+                                        @media (max-width: 576px) {
+                                            font-size: 20px;
+                                        }
+                                    }
+                                }
+            
+                                .author_text{
+                                    color: $Grey_text;
+                                }
+                            }
+                        }
+
+                        .desc{
+                            color: $Grey_text;
+                        }
+
+                        .sub_heading{
+                            color: $White;
+                            margin: 12px 0;
+                        }
+
+                        .list_ul{
+                            padding-left: 20px;
+
+                            .list_li{
+                                list-style: disc;
+                                color: $Grey_text;
+                            }
+                        }
+                    }
+
+                    .form_otr{
+
+                        .heading{
+                            color: $White;
+                        }
+
+                        .input_main{
+                            margin: 24px 0 32px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 16px 0;
+
+                            .textarea{
+                                padding: 20px 16px;
+                                width: 100%;
+                                background-color: $White;
+                                border: 2px solid transparent;
+                                font-size: $font-size-18px;
+                                line-height: $line-height-32px;
+                                font-family: $font-family-Jost-Regular;
+                                color: $Grey_text2;
+                                border-radius: 4px;
+                                outline: none;
+                                resize: none;
+                                height: 150px;
+                                transition: .3s;
+                            
+                                &:hover{
+                                    border: 2px solid $Primary_color;
+                                }
+                            
+                                @media (max-width: 768px) {
+                                    padding: 14px 16px;
+                                }
+                            
+                            }
+                        }
+
+                        .action_otr{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

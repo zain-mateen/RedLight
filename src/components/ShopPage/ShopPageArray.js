@@ -1,0 +1,58 @@
+export const ShopPageData = [
+    {
+        id: "1",
+        ShopCartImage: require('../../img/shop-img1.jpg'),
+        ShopCartHeading: "Data Center Rack Space",
+        // ShopCartPrice: "",
+        ShopCartDiscountPrice: "$25.00",
+    },
+    {
+        id: "2",
+        ShopCartImage: require('../../img/shop-img2.jpg'),
+        ShopCartHeading: "Hardware Firewall Appliance",
+        // ShopCartPrice: "",
+        ShopCartDiscountPrice: "$235.00",
+    },
+    {
+        id: "3",
+        ShopCartImage: require('../../img/shop-img3.jpg'),
+        ShopCartHeading: "KVM Over IP Console",
+        // ShopCartPrice: "",
+        ShopCartDiscountPrice: "$45.00",
+    },
+    {
+        id: "4",
+        ShopCartImage: require('../../img/shop-img4.jpg'),
+        ShopCartHeading: "Managed Backup Appliance",
+        // ShopCartPrice: "",
+        ShopCartDiscountPrice: "$11.05",
+    },
+    {
+        id: "5",
+        ShopCartImage: require('../../img/shop-img5.jpg'),
+        ShopCartHeading: "Managed Hosting Service Package",
+        ShopCartPrice: "$3.00",
+        ShopCartDiscountPrice: "$2.00",
+    },
+    {
+        id: "6",
+        ShopCartImage: require('../../img/shop-img6.jpg'),
+        ShopCartHeading: "Network Switch",
+        ShopCartPrice: "$20.00",
+        ShopCartDiscountPrice: "$18.00",
+    },
+    {
+        id: "7",
+        ShopCartImage: require('../../img/shop-img7.jpg'),
+        ShopCartHeading: "Rack-Mounted Server",
+        // ShopCartPrice: "",
+        ShopCartDiscountPrice: "$18.00",
+    },
+    {
+        id: "8",
+        ShopCartImage: require('../../img/shop-img8.jpg'),
+        ShopCartHeading: "Uninterruptible Power Supply",
+        // ShopCartPrice: "",
+        ShopCartDiscountPrice: "$15.00",
+    },
+]

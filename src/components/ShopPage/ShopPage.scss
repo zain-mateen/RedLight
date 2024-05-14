@@ -1,0 +1,80 @@
+@import '../../common-style/variables.scss';
+
+.ShopPage{
+    margin: 112px 0;
+
+    @media (max-width: 992px) {
+        margin: 72px 0;
+    }
+
+    @media (max-width: 576px) {
+        margin: 48px 0;
+    }
+
+    .container{
+
+        .row_custom{
+            gap: 36px 0;
+        }
+    }
+}
+
+.col_shopCart_otr{
+
+    .col_shopCart_inr{
+        background-color: $Black_shade2;
+        padding: 20px 20px 32px;
+        border-radius: 12px;
+
+        .img_main{
+            
+            .img_otr{
+                width: 100%;
+                overflow: hidden;
+                border-radius: 12px;
+                transition: .3s;
+    
+                .img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    transition: transform .3s;
+    
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+
+        .content_otr{
+            margin-top: 24px;
+
+            .heading{
+                color: $White;
+                transition: .3s;
+
+                &:hover{
+                    color: $Primary_color;
+                }
+            }
+
+            .price_otr{
+                display: flex;
+                align-items: center;
+                gap: 0 8px;
+                margin: 16px 0 20px;
+
+                .dis_price{
+                    color: $Grey_text;
+                    text-decoration: line-through;
+                }
+
+                .price{
+                    color: $White;
+                }
+            }
+        }
+    }
+}

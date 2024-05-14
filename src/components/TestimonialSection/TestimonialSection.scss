@@ -1,0 +1,133 @@
+@import '../../common-style/variables.scss';
+
+.TestimonialSection{
+    margin: 112px 0;
+
+    @media (max-width: 992px) {
+        margin: 72px 0;
+    }
+
+    @media (max-width: 576px) {
+        margin: 48px 0;
+    }
+
+    .container{
+
+        .swiper{
+            padding-top: 20px;
+        }
+    }
+}
+
+.col_testimonialCart_otr{
+
+    .col_testimonialCart_inr{
+        padding: 36px 28px 20px;
+        background-color: $Black_shade2;
+        border-radius: 8px;
+        border-bottom: 4px solid transparent;
+        position: relative;
+        transition: .3s;
+
+        @media (max-width: 576px) {
+            padding: 32px 20px 16px;
+            border-radius: 6px;
+        }
+
+        &:hover{
+            background-image: linear-gradient( 143deg, $Primary_color -24%, $Black_shade2 20% );
+            border-bottom: 2px solid $Primary_color;
+
+            .icon_otr{
+                background-color: $Primary_color;
+
+                .icon{
+                    color: $White;
+                    filter: brightness(0) invert(1) !important;
+                    -webkit-filter: grayscale(100%);
+                    filter: gray;
+                }
+            }
+
+            .content_otr{
+
+                .heading{
+                    color: $White;
+                }
+            }
+        }
+
+        .profile_content{
+            display: flex;
+            align-items: center;
+            gap: 0 16px;
+
+            .profile_otr{
+                width: 100px;
+                height: 100px;
+                border-radius: 8px;
+
+                .profile{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    cursor: pointer;
+                }
+            }
+
+            .content{
+
+                .heading{
+                    color: $Grey_text;
+                    transition: .3s;
+                    
+                    &:hover{
+                        color: $Yellow_shade;
+                    }
+                }
+
+                .text{
+                    color: $Primary_color;
+                    margin-top: 6px;
+                }
+            }
+        }
+        
+        .desc_star{
+            margin-top: 32px;
+
+            .desc{
+                color: $Grey_text;
+            }
+
+            .star_otr{
+                margin-top: 24px;
+
+                .star_ul{
+                    display: flex;
+                    align-items: center;
+                    gap: 0 2px;
+
+                    .star_li{
+
+                        svg{
+                            color: $Yellow_shade;
+                        }
+                    }
+                }
+            }
+        }
+
+        .pos_icon{
+            position: absolute;
+            top: 24px;
+            right: 24px;
+
+            .icon{
+                font-size: 50px;
+                color: $Grey_text;
+            }
+        }
+    }
+}

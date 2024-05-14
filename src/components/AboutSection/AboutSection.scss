@@ -1,0 +1,118 @@
+@import '../../common-style/variables.scss';
+
+.About{
+
+    .container{
+
+        .row_custom_otr{
+        
+            .row_custom{
+                background-color: $Black_shade2;
+                padding: 80px 60px;
+                border-radius: 16px;
+                align-items: center;
+        
+                @media (max-width: 992px) {
+                    padding: 56px 36px;
+                }
+        
+                @media (max-width: 576px) {
+                    padding: 32px 20px;
+                    border-radius: 8px;
+                }
+        
+                .col_content_otr{
+        
+                    @media (max-width: 576px) {
+                        padding: 0;
+                    }
+        
+                    .col_content_inr{
+        
+                        .heading{
+                            color: $White;
+                        }
+        
+                        .desc{
+                            color: $Grey_text;
+                            margin-top: 12px;
+                        }
+        
+                        .list_ul{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 8px 0;
+                            margin: 32px 0;
+        
+                            @media (max-width: 576px) {
+                                margin: 20px 0 28px;
+                                gap: 4px 0;
+                            }
+        
+                            .list_li{
+                                display: flex;
+                                align-items: center;
+                                gap: 0 12px;
+        
+                                .icon_otr{
+        
+                                    .icon{
+                                        font-size: 24px;
+                                        color: $Primary_color;
+        
+                                        @media (max-width: 465px) {
+                                            font-size: 20px;
+                                        }
+                                    }
+                                }
+        
+                                .list_text{
+                                    color: $Grey_text;
+                                }
+                            }
+                        }
+        
+                        .action_main{
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            gap: 16px 12px;
+        
+                            .action_otr{
+        
+                            }
+                        }
+                    }
+                }
+        
+                .col_img_otr{
+        
+                    @media (max-width: 576px) {
+                        padding: 0;
+                    }
+        
+                    .col_img_inr{
+                        display: flex;
+                        justify-content: center;
+        
+                        .img{
+                            width: 100%;
+        
+                            @media (max-width: 992px) {
+                                width: 70%;
+                            }
+        
+                            @media (max-width: 768px) {
+                                width: 85%;
+                            }
+        
+                            @media (max-width: 576px) {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
