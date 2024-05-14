@@ -5,7 +5,7 @@ import './TestimonialSection.scss'
 
 function TestimonialCart(props) {
     return (
-        <div className='col_testimonialCart_otr'>
+        <div className={`col_testimonialCart_otr ${props.TestimonialCartClass}`}>
             <div className='col_testimonialCart_inr'>
                 <div className='profile_content'>
                     <div className='profile_otr'>

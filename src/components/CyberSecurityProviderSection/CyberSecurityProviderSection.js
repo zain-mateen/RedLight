@@ -5,6 +5,7 @@ import './CyberSecurityProviderSection.scss';
 import cyberSecurityImage from '../../img/cyber-security-img.png';
 import { CyberSecurityProviderSectionStateCartData } from './CyberSecurityProviderSectionStateCartArray';
 import CyberSecuritySectionStateCart from './CyberSecurityProviderSectionStateCart';
+import { Link } from 'react-router-dom';
 
 const CyberSecurityProviderSection = () => {
     return (
@@ -21,12 +22,12 @@ const CyberSecurityProviderSection = () => {
                             <h2 className='heading heading-h2'>Advanced <span className='heading_inr'>Cyber Security</span> Provider</h2>
                             <p className='desc desc_1 heading-m'>Lorem ipsum dolor sit amet consectetuer adipiscing elitenean commo doligula eget dolorenean massa.In enim justo, rhoncus ut, imperdiet avene natis vitae justo nullam dictum felis eu pede mollis pretium Inte ger tincid unt cras dapibus</p>
                             <p className='desc desc_2 heading-m'>Vamus elementum semper nisi aenean vulputate eleife nd tellus onsec tet ueradip.</p>
-                            <div className='action_otr'>
+                            <Link className='action_otr' to='/contact-us'>
                                 <ThemeBtn 
                                     ButtonClass='border_btn'
                                     ButtonText='Contact Us'
                                 />
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

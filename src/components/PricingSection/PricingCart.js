@@ -1,6 +1,7 @@
 import React from 'react';
 import ThemeBtn from '../ThemeBtn/ThemeBtn'
 import './PricingSection.scss';
+import { Link } from 'react-router-dom';
 
 function PricingCart(props) {
     return (
@@ -33,12 +34,12 @@ function PricingCart(props) {
                         <p className='pricing_text heading-m'>{props.PricingCartText6}</p>
                     </li>
                 </ul>
-                <div className='action_otr'>
+                <Link className='action_otr' to='/pricing'>
                     <ThemeBtn 
                         ButtonClass='border_btn'
                         ButtonText='Order Now'
                     />
-                </div>
+                </Link>
             </div>
         </div>
     )

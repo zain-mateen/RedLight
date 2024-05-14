@@ -13,6 +13,7 @@ import BlogPage from './components/BlogPage/BlogPage';
 import BlogDetailPage from './components/BlogDetail/AvoidMistakesInSocialMediaPosts';
 import ContactPage from './components/ContactPage/ContactPage';
 import Footer from './components/Footer/Footer';
+import TestimonialsPage from './components/TestimonialsPage/TestimonialsPage';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/pricing' element={<PricingPlanPage />}/>
         <Route path='/team' element={<TeamPage />}/>
         <Route path='/faq' element={<FaqPage />}/>
+        <Route path='/testimonials' element={<TestimonialsPage />}/>
         <Route path='/shop' element={<ShopPage />}/>
         <Route path='/product-detail' element={<ProductDetailPage />}/>
         <Route path='/blog' element={<BlogPage />}/>

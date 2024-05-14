@@ -82,7 +82,7 @@ const Footer = () => {
                                 <p className='heading heading-lm'>Services</p>
                                 <ul className='navigation_ul'>
                                     <li className='navigation_li'>
-                                        <Link className='navigation_linkk'>
+                                        <Link className='navigation_linkk' to='/services'>
                                             <i class="icon ri-arrow-right-s-fill"></i>
                                             <span>
                                                 Security Training
@@ -90,7 +90,7 @@ const Footer = () => {
                                         </Link>
                                     </li>
                                     <li className='navigation_li'>
-                                        <Link className='navigation_linkk'>
+                                        <Link className='navigation_linkk' to='/services'>
                                             <i class="icon ri-arrow-right-s-fill"></i>
                                             <span>
                                                 Cloud Security
@@ -98,7 +98,7 @@ const Footer = () => {
                                         </Link>
                                     </li>
                                     <li className='navigation_li'>
-                                        <Link className='navigation_linkk'>
+                                        <Link className='navigation_linkk' to='/services'>
                                             <i class="icon ri-arrow-right-s-fill"></i>
                                             <span>
                                                 Secure Mangaged IT
@@ -106,7 +106,7 @@ const Footer = () => {
                                         </Link>
                                     </li>
                                     <li className='navigation_li'>
-                                        <Link className='navigation_linkk'>
+                                        <Link className='navigation_linkk' to='/services'>
                                             <i class="icon ri-arrow-right-s-fill"></i>
                                             <span>
                                                 Data Privacy
@@ -114,7 +114,7 @@ const Footer = () => {
                                         </Link>
                                     </li>
                                     <li className='navigation_li'>
-                                        <Link className='navigation_linkk'>
+                                        <Link className='navigation_linkk' to='/services'>
                                             <i class="icon ri-arrow-right-s-fill"></i>
                                             <span>
                                                 Industry Certified
@@ -122,7 +122,7 @@ const Footer = () => {
                                         </Link>
                                     </li>
                                     <li className='navigation_li'>
-                                        <Link className='navigation_linkk'>
+                                        <Link className='navigation_linkk' to='/services'>
                                             <i class="icon ri-arrow-right-s-fill"></i>
                                             <span>
                                                 Threat Intelligence
@@ -145,7 +145,7 @@ const Footer = () => {
                                         </Link>
                                     </li>
                                     <li className='navigation_li'>
-                                        <Link className='navigation_linkk'>
+                                        <Link className='navigation_linkk' to='/contact-us'>
                                             <i class="icon ri-arrow-right-s-fill"></i>
                                             <span>
                                                 Contact Us
@@ -161,7 +161,7 @@ const Footer = () => {
                                         </Link>
                                     </li>
                                     <li className='navigation_li'>
-                                        <Link className='navigation_linkk'>
+                                        <Link className='navigation_linkk' to='/about'>
                                             <i class="icon ri-arrow-right-s-fill"></i>
                                             <span>
                                                 About Us
@@ -169,7 +169,7 @@ const Footer = () => {
                                         </Link>
                                     </li>
                                     <li className='navigation_li'>
-                                        <Link className='navigation_linkk'>
+                                        <Link className='navigation_linkk' to='/faq'>
                                             <i class="icon ri-arrow-right-s-fill"></i>
                                             <span>
                                                 FAQ
@@ -177,7 +177,7 @@ const Footer = () => {
                                         </Link>
                                     </li>
                                     <li className='navigation_li'>
-                                        <Link className='navigation_linkk'>
+                                        <Link className='navigation_linkk' to='/pricing'>
                                             <i class="icon ri-arrow-right-s-fill"></i>
                                             <span>
                                                 Partnerships
