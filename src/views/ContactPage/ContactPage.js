@@ -1,8 +1,8 @@
 import React from 'react';
 import './ContactPage.scss';
-import PagesHeader from '../Header/PagesHeader';
-import ThemeInput from '../ThemeInput/ThemeInput';
-import ThemeBtn from '../ThemeBtn/ThemeBtn';
+import PagesHeader from '../../components/Header/PagesHeader';
+import ThemeInput from '../../components/ThemeInput/ThemeInput';
+import ThemeBtn from '../../components/ThemeBtn/ThemeBtn';
 
 const ContactPage = () => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import './ShopPage.scss';
-import PagesHeader from '../Header/PagesHeader';
+import PagesHeader from '../../components/Header/PagesHeader';
 import { ShopPageData } from './ShopPageArray';
 import ShopCart from './ShopCart';
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import './TestimonialsPage.scss';
-import PagesHeader from '../Header/PagesHeader';
+import PagesHeader from '../../components/Header/PagesHeader';
 import { TestimonialPageData } from './TestimonialsPageArray';
-import TestimonialCart from '../TestimonialSection/TestimonialCart';
+import TestimonialCart from '../../components/TestimonialSection/TestimonialCart';
 
 const TestimonialsPage = () => {
     return (

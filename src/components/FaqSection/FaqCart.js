@@ -1,6 +1,6 @@
 import React from 'react'
 import { CaretDown } from 'phosphor-react';
-import { Accordion } from 'react-bootstrap';
+import Accordion from 'react-bootstrap/Accordion';
 import './FaqSection.scss';
 
 function FaqCart(props) {

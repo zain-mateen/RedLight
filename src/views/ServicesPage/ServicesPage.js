@@ -1,10 +1,10 @@
 import React from 'react';
 import './ServicesPage.scss';
-import CompanySection from '../CompanySection/CompanySection';
-import AboutSection from '../AboutSection/AboutSection';
-import { WhatWeOfferSectionData } from '../WhatWeOfferSection/WhatWeOfferSectionArray';
-import ChooseUsSectionCart from '../ChooseUsSection/ChooseUsSectionCart';
-import PagesHeader from '../Header/PagesHeader';
+import CompanySection from '../../components/CompanySection/CompanySection';
+import AboutSection from '../../components/AboutSection/AboutSection';
+import { WhatWeOfferSectionData } from '../../components/WhatWeOfferSection/WhatWeOfferSectionArray';
+import ChooseUsSectionCart from '../../components/ChooseUsSection/ChooseUsSectionCart';
+import PagesHeader from '../../components/Header/PagesHeader';
 
 const ServicesPage = () => {
     return (

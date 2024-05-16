@@ -1,11 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import ThemeBtn from '../ThemeBtn/ThemeBtn'
+import { CyberSecurityProviderSectionStateCartData } from './CyberSecurityProviderSectionStateCartArray';
+import CyberSecuritySectionStateCart from './CyberSecurityProviderSectionStateCart';
+
 import './CyberSecurityProviderSection.scss';
 
 import cyberSecurityImage from '../../img/cyber-security-img.png';
-import { CyberSecurityProviderSectionStateCartData } from './CyberSecurityProviderSectionStateCartArray';
-import CyberSecuritySectionStateCart from './CyberSecurityProviderSectionStateCart';
-import { Link } from 'react-router-dom';
 
 const CyberSecurityProviderSection = () => {
     return (

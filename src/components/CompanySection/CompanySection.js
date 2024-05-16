@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import './CompanySection.scss';
 
 import companyLogo1 from '../../img/companies-logo1.png'

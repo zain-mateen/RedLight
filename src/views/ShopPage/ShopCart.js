@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ThemeBtn from '../ThemeBtn/ThemeBtn';
+import ThemeBtn from '../../components/ThemeBtn/ThemeBtn';
 import './ShopPage.scss';
 
 function ShopCart(props) {

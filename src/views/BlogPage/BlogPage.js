@@ -1,6 +1,6 @@
 import React from 'react';
 import './BlogPage.scss';
-import PagesHeader from '../Header/PagesHeader';
+import PagesHeader from '../../components/Header/PagesHeader';
 import { BlogPageData } from './BlogPageArray';
 import BlogPageCart from './BlogPageCart';
 import BlogPageRightContent from './BlogPageRightContent';

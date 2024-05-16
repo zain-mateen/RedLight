@@ -1,11 +1,11 @@
 import React from 'react';
-import ChooseUsSection from '../ChooseUsSection/ChooseUsSection';
-import CyberSecurityProviderSection from '../CyberSecurityProviderSection/CyberSecurityProviderSection';
-import TeamSection from '../TeamSection/TeamSection';
-import AboutSection from '../AboutSection/AboutSection';
+import ChooseUsSection from '../../components/ChooseUsSection/ChooseUsSection';
+import CyberSecurityProviderSection from '../../components/CyberSecurityProviderSection/CyberSecurityProviderSection';
+import TeamSection from '../../components/TeamSection/TeamSection';
+import AboutSection from '../../components/AboutSection/AboutSection';
 import './AboutPage.scss';
-import PagesHeader from '../Header/PagesHeader';
-import TestimonialSection from '../TestimonialSection/TestimonialSection';
+import PagesHeader from '../../components/Header/PagesHeader';
+import TestimonialSection from '../../components/TestimonialSection/TestimonialSection';
 
 const AboutPage = () => {
     return (
@@ -29,4 +29,4 @@ const AboutPage = () => {
     )
 }
 
-export default AboutPage
+export default AboutPage;

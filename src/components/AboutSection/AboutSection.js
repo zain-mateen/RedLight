@@ -1,8 +1,10 @@
 import React from 'react';
+
+import ThemeBtn from '../ThemeBtn/ThemeBtn';
+
 import './AboutSection.scss';
 
 import img from '../../img/about-section-img.png'
-import ThemeBtn from '../ThemeBtn/ThemeBtn';
 
 const AboutSection = () => {
     return (

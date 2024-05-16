@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import ThemeBtn from '../ThemeBtn/ThemeBtn';
-import './CyberSecuritySolutionSection.scss';
 
 import cyberSecuritySolutionImage from '../../img/cyber-security-right-img.png'
-import { Link } from 'react-router-dom';
+
+import './CyberSecuritySolutionSection.scss';
 
 const CyberSecuritySolutionSection = () => {
     return (

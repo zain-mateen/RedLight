@@ -1,10 +1,10 @@
 import React from 'react';
-import FaqSection from '../FaqSection/FaqSection';
-import CompanySection from '../CompanySection/CompanySection';
+import FaqSection from '../../components/FaqSection/FaqSection';
+import CompanySection from '../../components/CompanySection/CompanySection';
 import './PricingPlanPage.scss';
-import PagesHeader from '../Header/PagesHeader';
-import { PricingSectionData } from '../PricingSection/PricingSectionArray';
-import PricingCart from '../PricingSection/PricingCart';
+import PagesHeader from '../../components/Header/PagesHeader';
+import { PricingSectionData } from '../../components/PricingSection/PricingSectionArray';
+import PricingCart from '../../components/PricingSection/PricingCart';
 
 const PricingPlanPage = () => {
     return (

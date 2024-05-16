@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './ProductDetail.scss';
-import BlogPagesHeader from '../Header/BlogPagesHeader';
-import ThemeBtn from '../ThemeBtn/ThemeBtn'
+import BlogPagesHeader from '../../components/Header/BlogPagesHeader';
+import ThemeBtn from '../../components/ThemeBtn/ThemeBtn'
 import ShopCart from '../ShopPage/ShopCart'
 
 import img from '../../img/shop-img1.jpg'
 import { RelatedProductData } from './RelatedProductArray';
-import ThemeInput from '../ThemeInput/ThemeInput';
+import ThemeInput from '../../components/ThemeInput/ThemeInput';
 
 function ProductDetail() {
     const [quantity, setQuantity] = useState(1);

@@ -1,9 +1,9 @@
 import React from 'react';
 import './TeamPage.scss';
 
-import PagesHeader from '../Header/PagesHeader'
+import PagesHeader from '../../components/Header/PagesHeader'
 import { TeamPageData } from './TeamPageArray';
-import TeamSectionCart from '../TeamSection/TeamSectionCart'
+import TeamSectionCart from '../../components/TeamSection/TeamSectionCart'
 
 
 const TeamPage = () => {

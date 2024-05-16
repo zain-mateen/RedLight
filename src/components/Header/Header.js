@@ -1,11 +1,13 @@
 import React, { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
-import ThemeBtn from '../ThemeBtn/ThemeBtn';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import './Header.scss';
 
+import Offcanvas from 'react-bootstrap/Offcanvas';
 import brandLogo from '../../img/brand logo.png'
-import { Accordion } from 'react-bootstrap';
+import Accordion from 'react-bootstrap/Accordion';
+
+import ThemeBtn from '../ThemeBtn/ThemeBtn';
+
+import './Header.scss';
 
 const Header = () => {
     const [show, setShow] = useState(false);

@@ -3,9 +3,9 @@ import './AvoidMistakesInSocialMediaPosts.scss';
 import BlogPageRightContent from '../BlogPage/BlogPageRightContent'
 
 import img from '../../img/blog-img3.jpg'
-import BlogPagesHeader from '../Header/BlogPagesHeader';
-import ThemeInput from '../ThemeInput/ThemeInput';
-import ThemeBtn from '../ThemeBtn/ThemeBtn';
+import BlogPagesHeader from '../../components/Header/BlogPagesHeader';
+import ThemeInput from '../../components/ThemeInput/ThemeInput';
+import ThemeBtn from '../../components/ThemeBtn/ThemeBtn';
 
 const AvoidMistakesInSocialMediaPosts = () => {
     return (

@@ -1,23 +1,26 @@
 import { Route, Routes } from 'react-router-dom';
 
 import Header from './components/Header/Header';
-import LandingPage from './components/LandingPage/LandingPage';
-import AboutPage from './components/AboutPage/AboutPage';
-import ServicePage from './components/ServicesPage/ServicesPage';
-import PricingPlanPage from './components/PricingPlanPag/PricingPlanPage';
-import TeamPage from './components/TeamPage/TeamPage';
-import FaqPage from './components/FaqPage/FaqPage';
-import ShopPage from './components/ShopPage/ShopPage';
-import ProductDetailPage from './components/ProductDetail/ProductDetail';
-import BlogPage from './components/BlogPage/BlogPage';
-import BlogDetailPage from './components/BlogDetail/AvoidMistakesInSocialMediaPosts';
-import ContactPage from './components/ContactPage/ContactPage';
+import LandingPage from './views/LandingPage/LandingPage';
+import AboutPage from './views/AboutPage/AboutPage';
+import ServicePage from './views/ServicesPage/ServicesPage';
+import PricingPlanPage from './views/PricingPlanPag/PricingPlanPage';
+import TeamPage from './views/TeamPage/TeamPage';
+import FaqPage from './views/FaqPage/FaqPage';
+import ShopPage from './views/ShopPage/ShopPage';
+import ProductDetailPage from './views/ProductDetail/ProductDetail';
+import BlogPage from './views/BlogPage/BlogPage';
+import BlogDetailPage from './views/BlogDetail/AvoidMistakesInSocialMediaPosts';
+import ContactPage from './views/ContactPage/ContactPage';
+import TestimonialsPage from './views/TestimonialsPage/TestimonialsPage';
 import Footer from './components/Footer/Footer';
-import TestimonialsPage from './components/TestimonialsPage/TestimonialsPage';
+
+import ScrollToTopOnMount from './components/ScrollToTopOnMount/ScrollToTopOnMount';
 
 function App() {
   return (
     <div>
+      <ScrollToTopOnMount />
       <Header />
       <Routes>
         <Route path='/' element={<LandingPage />}/>
