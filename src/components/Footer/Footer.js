@@ -55,22 +55,22 @@ const Footer = () => {
                                     <ul className='social_ul'>
                                         <li className='social_li'>
                                             <a className='social_a' href='/'>
-                                                <i class="social_icon ri-facebook-fill"></i>
+                                                <i className="social_icon ri-facebook-fill"></i>
                                             </a>
                                         </li>
                                         <li className='social_li'>
                                             <a className='social_a' href='/'>
-                                                <i class="social_icon ri-instagram-line"></i>
+                                                <i className="social_icon ri-instagram-line"></i>
                                             </a>
                                         </li>
                                         <li className='social_li'>
                                             <a className='social_a' href='/'>
-                                                <i class="social_icon ri-twitter-fill"></i>
+                                                <i className="social_icon ri-twitter-fill"></i>
                                             </a>
                                         </li>
                                         <li className='social_li'>
                                             <a className='social_a' href='/'>
-                                                <i class="social_icon ri-linkedin-fill"></i>
+                                                <i className="social_icon ri-linkedin-fill"></i>
                                             </a>
                                         </li>
                                     </ul>
@@ -83,7 +83,7 @@ const Footer = () => {
                                 <ul className='navigation_ul'>
                                     <li className='navigation_li'>
                                         <Link className='navigation_linkk' to='/services'>
-                                            <i class="icon ri-arrow-right-s-fill"></i>
+                                            <i className="icon ri-arrow-right-s-fill"></i>
                                             <span>
                                                 Security Training
                                             </span>
@@ -91,7 +91,7 @@ const Footer = () => {
                                     </li>
                                     <li className='navigation_li'>
                                         <Link className='navigation_linkk' to='/services'>
-                                            <i class="icon ri-arrow-right-s-fill"></i>
+                                            <i className="icon ri-arrow-right-s-fill"></i>
                                             <span>
                                                 Cloud Security
                                             </span>
@@ -99,7 +99,7 @@ const Footer = () => {
                                     </li>
                                     <li className='navigation_li'>
                                         <Link className='navigation_linkk' to='/services'>
-                                            <i class="icon ri-arrow-right-s-fill"></i>
+                                            <i className="icon ri-arrow-right-s-fill"></i>
                                             <span>
                                                 Secure Mangaged IT
                                             </span>
@@ -107,7 +107,7 @@ const Footer = () => {
                                     </li>
                                     <li className='navigation_li'>
                                         <Link className='navigation_linkk' to='/services'>
-                                            <i class="icon ri-arrow-right-s-fill"></i>
+                                            <i className="icon ri-arrow-right-s-fill"></i>
                                             <span>
                                                 Data Privacy
                                             </span>
@@ -115,7 +115,7 @@ const Footer = () => {
                                     </li>
                                     <li className='navigation_li'>
                                         <Link className='navigation_linkk' to='/services'>
-                                            <i class="icon ri-arrow-right-s-fill"></i>
+                                            <i className="icon ri-arrow-right-s-fill"></i>
                                             <span>
                                                 Industry Certified
                                             </span>
@@ -123,7 +123,7 @@ const Footer = () => {
                                     </li>
                                     <li className='navigation_li'>
                                         <Link className='navigation_linkk' to='/services'>
-                                            <i class="icon ri-arrow-right-s-fill"></i>
+                                            <i className="icon ri-arrow-right-s-fill"></i>
                                             <span>
                                                 Threat Intelligence
                                             </span>
@@ -138,7 +138,7 @@ const Footer = () => {
                                 <ul className='navigation_ul'>
                                     <li className='navigation_li'>
                                         <Link className='navigation_linkk'>
-                                            <i class="icon ri-arrow-right-s-fill"></i>
+                                            <i className="icon ri-arrow-right-s-fill"></i>
                                             <span>
                                                 Support
                                             </span>
@@ -146,7 +146,7 @@ const Footer = () => {
                                     </li>
                                     <li className='navigation_li'>
                                         <Link className='navigation_linkk' to='/contact-us'>
-                                            <i class="icon ri-arrow-right-s-fill"></i>
+                                            <i className="icon ri-arrow-right-s-fill"></i>
                                             <span>
                                                 Contact Us
                                             </span>
@@ -154,7 +154,7 @@ const Footer = () => {
                                     </li>
                                     <li className='navigation_li'>
                                         <Link className='navigation_linkk'>
-                                            <i class="icon ri-arrow-right-s-fill"></i>
+                                            <i className="icon ri-arrow-right-s-fill"></i>
                                             <span>
                                                 Knowledge Base
                                             </span>
@@ -162,7 +162,7 @@ const Footer = () => {
                                     </li>
                                     <li className='navigation_li'>
                                         <Link className='navigation_linkk' to='/about'>
-                                            <i class="icon ri-arrow-right-s-fill"></i>
+                                            <i className="icon ri-arrow-right-s-fill"></i>
                                             <span>
                                                 About Us
                                             </span>
@@ -170,7 +170,7 @@ const Footer = () => {
                                     </li>
                                     <li className='navigation_li'>
                                         <Link className='navigation_linkk' to='/faq'>
-                                            <i class="icon ri-arrow-right-s-fill"></i>
+                                            <i className="icon ri-arrow-right-s-fill"></i>
                                             <span>
                                                 FAQ
                                             </span>
@@ -178,7 +178,7 @@ const Footer = () => {
                                     </li>
                                     <li className='navigation_li'>
                                         <Link className='navigation_linkk' to='/pricing'>
-                                            <i class="icon ri-arrow-right-s-fill"></i>
+                                            <i className="icon ri-arrow-right-s-fill"></i>
                                             <span>
                                                 Partnerships
                                             </span>

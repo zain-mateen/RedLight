@@ -8,6 +8,8 @@ import Accordion from 'react-bootstrap/Accordion';
 import ThemeBtn from '../ThemeBtn/ThemeBtn';
 
 import './Header.scss';
+import CartIcon from '../CartIcon/CartIcon';
+import { NavigationItems } from '../../Data';
 
 const Header = () => {
     const [show, setShow] = useState(false);
@@ -27,97 +29,41 @@ const Header = () => {
                         </div>
                         <nav className='nav_otr'>
                             <ul className='menu_ul'>
-                                <li className='menu_li'>
-                                    <Link className='menu_linkk heading-m' to='/'>
-                                        <span>
-                                            Home
-                                        </span>
-                                    </Link>
-                                </li>
-                                <li className='menu_li'>
-                                    <Link className='menu_linkk heading-m' to='/about'>
-                                        <span>
-                                            About
-                                        </span>
-                                    </Link>
-                                </li>
-                                <li className='menu_li'>
-                                    <Link className='menu_linkk heading-m' to='/services'>
-                                        <span>
-                                            Services
-                                        </span>
-                                    </Link>
-                                </li>
-                                <li className='menu_li'>
-                                    <Link className='menu_linkk heading-m' to='/pricing'>
-                                        <span>
-                                            Pricing
-                                        </span>
-                                    </Link>
-                                </li>
-                                <li className='menu_li dropdown_hold_li'>
-                                    <div className='menu_linkk heading-m'>
-                                        <span>
-                                            Pages
-                                        </span>
-                                        <i class="icon ri-arrow-down-s-fill"></i>
-                                    </div>
-                                    <div className='dropdown_otr'>
-                                        <ul className='dropdown_ul'>
-                                            <li className='dropdown_li'>
-                                                <Link className='dropdown_linkk heading-s' to='/team'>
-                                                    <span>
-                                                        Team
-                                                    </span>
-                                                </Link>
-                                            </li>
-                                            <li className='dropdown_li'>
-                                                <Link className='dropdown_linkk heading-s' to='/faq'>
-                                                    <span>
-                                                        Faq
-                                                    </span>
-                                                </Link>
-                                            </li>
-                                            <li className='dropdown_li'>
-                                                <Link className='dropdown_linkk heading-s' to='/testimonials'>
-                                                    <span>
-                                                        Testimonials
-                                                    </span>
-                                                </Link>
-                                            </li>
-                                            <li className='dropdown_li'>
-                                                <Link className='dropdown_linkk heading-s' to='/shop'>
-                                                    <span>
-                                                        Shop
-                                                    </span>
-                                                </Link>
-                                            </li>
-                                            <li className='dropdown_li'>
-                                                <Link className='dropdown_linkk heading-s' to='/blog'>
-                                                    <span>
-                                                        Blog
-                                                    </span>
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                {NavigationItems.map((item) => (
+                                    <li className='menu_li' key={item.id}>
+                                        <Link className='menu_linkk heading-m' to={item.link}>
+                                            <span>{item.name}</span>
+                                            {item.icon && item.icon}
+                                        </Link>
+                                        {item.PagesInnerLinks && item.PagesInnerLinks.length > 0 && (
+                                            <div className="dropdown_otr">
+                                                <ul className="dropdown_ul">
+                                                    {item.PagesInnerLinks.map((innerItem) => (
+                                                        <li className="dropdown_li" key={innerItem.id}>
+                                                            <Link className='dropdown_linkk heading-s' to={innerItem.link}>
+                                                                <span>{innerItem.name}</span>
+                                                            </Link>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        )}
+                                    </li>
+                                ))}
                             </ul>
                         </nav>
                         <div className='action_main'>
+                            <Link className='cart_main' to='/checkout'>
+                                <CartIcon />
+                            </Link>
                             <Link className='action_otr' to='/contact-us'>
                                 <ThemeBtn 
                                     ButtonClass='header_btn'
                                     ButtonText='Contact Us'
                                 />
                             </Link>
-                            <div className='cart_main'>
-                                <Link className='cart_otr'>
-                                    <i class="icon ri-shopping-bag-line"></i>
-                                </Link>
-                            </div>
                             <div className='menu_icon_otr' onClick={handleShow}>
-                                <i class="icon ri-menu-4-fill"></i>
+                                <i className="icon ri-menu-4-fill"></i>
                             </div>
                         </div>
                     </div>

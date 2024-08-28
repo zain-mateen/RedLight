@@ -1,0 +1,58 @@
+@import '../../common-style/variables.scss';
+
+.cart_icon_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background-color: $Grey_bg_color;
+    border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+    transition: .3s;
+
+    @media (max-width: 992px) {
+        width: 40px;
+        height: 40px;
+    }
+
+    &:hover{
+        
+        .shopping_icon{
+            color: $Primary_color;
+        }
+    }
+
+    .shopping_icon{
+        font-size: 24px;
+        color: $White;
+        transition: .3s;
+
+        @media (max-width: 992px) {
+            font-size: 20px;
+        }
+    }
+
+    .item_count{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 16px;
+        height: 16px;
+        background-color: $Primary_color;
+        border-radius: 100%;
+        color: $White;
+        font-size: 10px;
+        line-height: 16px;
+        font-family: $font-family-Jost-Regular;
+        text-align: center;
+        
+        @media (max-width: 575.98px) {
+            width: 12px;
+            height: 12px;
+            line-height: 12px;
+            font-size: 8px;
+        }
+    }
+}

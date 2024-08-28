@@ -47,7 +47,16 @@
 
                     .menu_li{
                         position: relative;
-                        
+                        transition: .3s;
+
+                        &:hover{
+
+                            .dropdown_otr{
+                                top: 20px;
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
 
                         .menu_linkk{
                             display: flex;
@@ -142,19 +151,6 @@
                             }
                         }
                     }
-
-                    .dropdown_hold_li{
-                        transition: .3s;
-
-                        &:hover{
-
-                            .dropdown_otr{
-                                top: 20px;
-                                visibility: visible;
-                                opacity: 1;
-                            }
-                        }
-                    }
                 }
             }
 
@@ -163,46 +159,14 @@
                 align-items: center;
                 gap: 0 16px;
 
+                .cart_main{
+                    
+                }
+
                 .action_otr{
 
                     @media (max-width: 992px) {
                         display: none;
-                    }
-                }
-
-                .cart_main{
-
-                    .cart_otr{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 52px;
-                        height: 52px;
-                        background-color: $Grey_bg_color;
-                        border-radius: 6px;
-                        transition: .3s;
-
-                        @media (max-width: 992px) {
-                            width: 40px;
-                            height: 40px;
-                        }
-
-                        &:hover{
-                            
-                            .icon{
-                                color: $Primary_color;
-                            }
-                        }
-    
-                        .icon{
-                            font-size: 24px;
-                            color: $White;
-                            transition: .3s;
-
-                            @media (max-width: 992px) {
-                                font-size: 20px;
-                            }
-                        }
                     }
                 }
 

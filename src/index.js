@@ -1,28 +1,24 @@
 import React from 'react';
-// import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import 'remixicon/fonts/remixicon.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
-import 'remixicon/fonts/remixicon.css'
 import App from './App';
 import './fonts/fonts.css';
-import reportWebVitals from './reportWebVitals';
 
-import {createRoot} from 'react-dom/client';
-import {BrowserRouter as Router} from 'react-router-dom';
+import { CartProvider } from './context/CartContext';
+import { ProductsProvider } from './context/ProductContext';
 
-const rootElement = document.getElementById('root');
-const root = createRoot(rootElement);
-
-// 👇️ wrap App in Router
-
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Router>
-    <App />
-  </Router>
+  <React.StrictMode>
+    <BrowserRouter>
+      <ProductsProvider>
+        <CartProvider>
+          <App />
+        </CartProvider>
+      </ProductsProvider>
+    </BrowserRouter>
+  </React.StrictMode>
 );
-
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

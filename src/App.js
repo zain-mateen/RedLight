@@ -13,6 +13,7 @@ import BlogPage from './views/BlogPage/BlogPage';
 import BlogDetailPage from './views/BlogDetail/AvoidMistakesInSocialMediaPosts';
 import ContactPage from './views/ContactPage/ContactPage';
 import TestimonialsPage from './views/TestimonialsPage/TestimonialsPage';
+import Checkout from './views/Checkout/Checkout';
 import Footer from './components/Footer/Footer';
 
 import ScrollToTopOnMount from './components/ScrollToTopOnMount/ScrollToTopOnMount';
@@ -35,6 +36,7 @@ function App() {
         <Route path='/blog' element={<BlogPage />}/>
         <Route path='/blog-detail' element={<BlogDetailPage />}/>
         <Route path='/contact-us' element={<ContactPage />}/>
+        <Route path='/checkout' element={<Checkout />}/>
       </Routes>
       <Footer />
     </div>

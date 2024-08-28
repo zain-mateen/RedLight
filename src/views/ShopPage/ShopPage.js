@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './ShopPage.scss';
 import PagesHeader from '../../components/Header/PagesHeader';
-import { ShopPageData } from './ShopPageArray';
 import ShopCart from './ShopCart';
+import { ShopPageData } from '../../Data';
+import { ProductsContext } from '../../context/ProductContext';
 
 const ShopPage = () => {
+    const { products } = useContext(ProductsContext);
+
     return (
         <div className='ShopPage'>
             <div className='container'>
@@ -13,16 +16,12 @@ const ShopPage = () => {
                     PagesWrapperCurrentPageLink="/shop"
                     PagesWrapperCurrentPageText="Shop"
                 />
-                <div className='row row_custom'>
-                    {ShopPageData.map((data)=>{
+                <div className='row_custom'>
+                    {products.map((product)=>{
                         return (
                             <ShopCart 
-                                key={data.id}
-                                ShopCartClass='col-lg-4 col-md-6 col-sm-6'
-                                ShopCartImage={data.ShopCartImage}
-                                ShopCartHeading={data.ShopCartHeading}
-                                ShopCartPrice={data.ShopCartPrice}
-                                ShopCartDiscountPrice={data.ShopCartDiscountPrice}
+                                key={product.id}
+                                product={product}
                             />
                         )
                     })}
