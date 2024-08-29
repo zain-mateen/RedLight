@@ -3,7 +3,7 @@ import FaqSection from '../../components/FaqSection/FaqSection';
 import CompanySection from '../../components/CompanySection/CompanySection';
 import './PricingPlanPage.scss';
 import PagesHeader from '../../components/Header/PagesHeader';
-import { PricingSectionData } from '../../components/PricingSection/PricingSectionArray';
+import { PricingSectionData } from '../../Data';
 import PricingCart from '../../components/PricingSection/PricingCart';
 
 const PricingPlanPage = () => {

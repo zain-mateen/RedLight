@@ -1,6 +1,6 @@
 import React from 'react';
 import HeaderInner from '../Header/HeaderInner';
-import { WhatWeOfferSectionData } from './WhatWeOfferSectionArray';
+import { WhatWeOfferSectionData } from '../../Data';
 import ChooseUsSectionCart from '../ChooseUsSection/ChooseUsSectionCart';
 import './WhatWeOfferSection.scss';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './TestimonialsPage.scss';
 import PagesHeader from '../../components/Header/PagesHeader';
-import { TestimonialPageData } from './TestimonialsPageArray';
+import { TestimonialPageData } from '../../Data';
 import TestimonialCart from '../../components/TestimonialSection/TestimonialCart';
 
 const TestimonialsPage = () => {

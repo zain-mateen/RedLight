@@ -105,19 +105,16 @@
                                     }
     
                                     .contact_text{
-                                        color: $Grey_text;
-                                    }
-    
-                                    .contact_link_otr{
                                         display: flex;
                                         align-items: center;
                                         gap: 0 12px;
+                                        color: $Grey_text;
 
                                         @media (max-width: 576px) {
                                             flex-wrap: wrap;
                                             justify-content: center;
                                         }
-    
+
                                         .contact_link_text{
                                             color: $Grey_text;
                                             word-break: break-all;

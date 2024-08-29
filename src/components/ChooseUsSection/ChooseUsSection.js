@@ -1,7 +1,7 @@
 import React from 'react';
 
 import HeaderInner from '../Header/HeaderInner';
-import { ChooseUsSectionData } from './ChooseUsSectionArray';
+import { ChooseUsSectionData } from '../../Data';
 import ChooseUsSectionCart from './ChooseUsSectionCart';
 
 import positionImage from '../../img/chooseUs-position-img.png'

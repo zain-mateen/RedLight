@@ -2,7 +2,7 @@ import React from 'react';
 import './ServicesPage.scss';
 import CompanySection from '../../components/CompanySection/CompanySection';
 import AboutSection from '../../components/AboutSection/AboutSection';
-import { WhatWeOfferSectionData } from '../../components/WhatWeOfferSection/WhatWeOfferSectionArray';
+import { WhatWeOfferSectionData } from '../../Data';
 import ChooseUsSectionCart from '../../components/ChooseUsSection/ChooseUsSectionCart';
 import PagesHeader from '../../components/Header/PagesHeader';
 

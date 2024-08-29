@@ -2,6 +2,7 @@ import React from 'react'
 import ThemeInput from '../../components/ThemeInput/ThemeInput';
 import ThemeBtn from '../../components/ThemeBtn/ThemeBtn';
 import { Link } from 'react-router-dom';
+import { BlogPostData, BlogArchiveData, BlogCategoryData } from '../../Data';
 import './BlogPage.scss';
 
 function BlogPageRightContent(props) {
@@ -37,27 +38,13 @@ function BlogPageRightContent(props) {
                     <div className='post_box_inr'>
                         <h4 className='post_heading heading-h4'>Recent Posts</h4>
                         <ul className='post_ul'>
-                            <li className='post_li'>
-                                <Link className='post_text heading-s'>
-                                    <span>
-                                        Avoid Mistakes In Social Media Posts
-                                    </span>
-                                </Link>
-                            </li>
-                            <li className='post_li'>
-                                <Link className='post_text heading-s'>
-                                    <span>
-                                        The Security Risks Of Changing Package Owners
-                                    </span>
-                                </Link>
-                            </li>
-                            <li className='post_li'>
-                                <Link className='post_text heading-s'>
-                                    <span>
-                                        Protect Your Workplace From Cyber Attacks
-                                    </span>
-                                </Link>
-                            </li>
+                            {BlogPostData.map((post) => (
+                                <li className='post_li' key={post.id}>
+                                    <Link className='post_text heading-s'>
+                                        <span>{post.text}</span>
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </div>
@@ -71,26 +58,12 @@ function BlogPageRightContent(props) {
                     <div className='archive_box_inr'>
                         <h4 className='archive_heading heading-h4'>Archives</h4>
                         <ul className='archive_ul'>
-                            <li className='archive_li'>
-                                <i class="icon ri-arrow-right-s-fill"></i>
-                                <Link className='archive_text heading-s'>November 2022</Link>
-                            </li>
-                            <li className='archive_li'>
-                                <i class="icon ri-arrow-right-s-fill"></i>
-                                <Link className='archive_text heading-s'>February 2023</Link>
-                            </li>
-                            <li className='archive_li'>
-                                <i class="icon ri-arrow-right-s-fill"></i>
-                                <Link className='archive_text heading-s'>April 2023</Link>
-                            </li>
-                            <li className='archive_li'>
-                                <i class="icon ri-arrow-right-s-fill"></i>
-                                <Link className='archive_text heading-s'>September 2023</Link>
-                            </li>
-                            <li className='archive_li'>
-                                <i class="icon ri-arrow-right-s-fill"></i>
-                                <Link className='archive_text heading-s'>December 2023</Link>
-                            </li>
+                            {BlogArchiveData.map((archive) => (
+                                <li className='archive_li' key={archive.id}>
+                                    <i className="icon ri-arrow-right-s-fill"></i>
+                                    <Link className='archive_text heading-s'>{archive.month}</Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </div>
@@ -98,38 +71,12 @@ function BlogPageRightContent(props) {
                     <div className='category_box_inr'>
                         <h4 className='category_heading heading-h4'>Categories</h4>
                         <ul className='category_ul'>
-                            <li className='category_li'>
-                                <i class="icon ri-arrow-right-s-fill"></i>
-                                <Link className='category_text heading-s'>Social Media</Link>
-                            </li>
-                            <li className='category_li'>
-                                <i class="icon ri-arrow-right-s-fill"></i>
-                                <Link className='category_text heading-s'>Ethical Hacking</Link>
-                            </li>
-                            <li className='category_li'>
-                                <i class="icon ri-arrow-right-s-fill"></i>
-                                <Link className='category_text heading-s'>Cyber Attack</Link>
-                            </li>
-                            <li className='category_li'>
-                                <i class="icon ri-arrow-right-s-fill"></i>
-                                <Link className='category_text heading-s'>Security</Link>
-                            </li>
-                            <li className='category_li'>
-                                <i class="icon ri-arrow-right-s-fill"></i>
-                                <Link className='category_text heading-s'>Recover Hacked Accounts</Link>
-                            </li>
-                            <li className='category_li'>
-                                <i class="icon ri-arrow-right-s-fill"></i>
-                                <Link className='category_text heading-s'>Youtube Monetization</Link>
-                            </li>
-                            <li className='category_li'>
-                                <i class="icon ri-arrow-right-s-fill"></i>
-                                <p className='category_text heading-s'>Facebook Moetization</p>
-                            </li>
-                            <li className='category_li'>
-                                <i class="icon ri-arrow-right-s-fill"></i>
-                                <p className='category_text heading-s'>Instagram Moetization</p>
-                            </li>
+                            {BlogCategoryData.map((category) => (
+                                <li className='category_li' key={category.id}>
+                                    <i className="icon ri-arrow-right-s-fill"></i>
+                                    <Link className='category_text heading-s'>{category.category}</Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </div>

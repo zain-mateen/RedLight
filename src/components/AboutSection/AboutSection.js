@@ -5,6 +5,7 @@ import ThemeBtn from '../ThemeBtn/ThemeBtn';
 import './AboutSection.scss';
 
 import img from '../../img/about-section-img.png'
+import { AboutListData } from '../../Data';
 
 const AboutSection = () => {
     return (
@@ -19,54 +20,14 @@ const AboutSection = () => {
                                     Lorem ipsum dolor sit amet consectetuer adipiscing elitenean commodoligula egetmassa.
                                 </p>
                                 <ul className='list_ul'>
-                                    <li className='list_li'>
-                                        <div className='icon_otr'>
-                                            <i class="icon ri-shield-star-fill"></i>
-                                        </div>
-                                        <p className='list_text heading-xs'>Website Security Services</p>
-                                    </li>
-                                    <li className='list_li'>
-                                        <div className='icon_otr'>
-                                            <i class="icon ri-shield-star-fill"></i>
-                                        </div>
-                                        <p className='list_text heading-xs'>SIEM Threat Detection</p>
-                                    </li>
-                                    <li className='list_li'>
-                                        <div className='icon_otr'>
-                                            <i class="icon ri-shield-star-fill"></i>
-                                        </div>
-                                        <p className='list_text heading-xs'>Content Delivery Network</p>
-                                    </li>
-                                    <li className='list_li'>
-                                        <div className='icon_otr'>
-                                            <i class="icon ri-shield-star-fill"></i>
-                                        </div>
-                                        <p className='list_text heading-xs'>24/7 Hours services</p>
-                                    </li>
-                                    <li className='list_li'>
-                                        <div className='icon_otr'>
-                                            <i class="icon ri-shield-star-fill"></i>
-                                        </div>
-                                        <p className='list_text heading-xs'>Security Management</p>
-                                    </li>
-                                    <li className='list_li'>
-                                        <div className='icon_otr'>
-                                            <i class="icon ri-shield-star-fill"></i>
-                                        </div>
-                                        <p className='list_text heading-xs'>Instant Malware Removal</p>
-                                    </li>
-                                    <li className='list_li'>
-                                        <div className='icon_otr'>
-                                            <i class="icon ri-shield-star-fill"></i>
-                                        </div>
-                                        <p className='list_text heading-xs'>Website Hack Repair</p>
-                                    </li>
-                                    <li className='list_li'>
-                                        <div className='icon_otr'>
-                                            <i class="icon ri-shield-star-fill"></i>
-                                        </div>
-                                        <p className='list_text heading-xs'>Instant Malware Removal</p>
-                                    </li>
+                                    {AboutListData.map(item => (
+                                        <li key={item.id} className='list_li'>
+                                            <div className='icon_otr'>
+                                                <i className={`icon ${item.iconClass}`}></i>
+                                            </div>
+                                            <p className='list_text heading-xs'>{item.text}</p>
+                                        </li>
+                                    ))}
                                 </ul>
                                 <div className='action_main'>
                                     <div className='action_otr'>

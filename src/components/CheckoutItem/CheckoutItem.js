@@ -20,7 +20,7 @@ const CheckoutItem = ({ cartItem }) => {
                     <img className='img' src={image} alt={`${heading}`} />
                 </div>
                 <div className="details">
-                    <p className="heading heading-mm">{heading}</p>
+                    <p className="heading heading-m">{heading}</p>
                     <div className="res_quantity_otr">
                         <div className="icon_otr" onClick={removeItemHandler}>
                             <i class="icon ri-subtract-line"></i>

@@ -3,12 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './CompanySection.scss';
 
-import companyLogo1 from '../../img/companies-logo1.png'
-import companyLogo2 from '../../img/companies-logo2.png'
-import companyLogo3 from '../../img/companies-logo3.png'
-import companyLogo4 from '../../img/companies-logo4.png'
-import companyLogo5 from '../../img/companies-logo5.png'
-import companyLogo6 from '../../img/companies-logo6.png'
+import { CompanySectionData } from '../../Data';
 
 const CompanySection = () => {
     return (
@@ -19,36 +14,13 @@ const CompanySection = () => {
                 </div>
                 <div className='logo_otr'>
                     <ul className='logo_ul'>
-                        <li className='logo_li'>
-                            <Link className='logo_linkk'>
-                                <img className='logo_img' src={companyLogo1} alt='Craft Company LOGO' />
-                            </Link>
-                        </li>
-                        <li className='logo_li'>
-                            <Link className='logo_linkk'>
-                                <img className='logo_img' src={companyLogo2} alt='Minimum Company LOGO' />
-                            </Link>
-                        </li>
-                        <li className='logo_li'>
-                            <Link className='logo_linkk'>
-                                <img className='logo_img' src={companyLogo3} alt='Hype Company LOGO' />
-                            </Link>
-                        </li>
-                        <li className='logo_li'>
-                            <Link className='logo_linkk'>
-                                <img className='logo_img' src={companyLogo4} alt='Power XR2 Modules Company LOGO' />
-                            </Link>
-                        </li>
-                        <li className='logo_li'>
-                            <Link className='logo_linkk'>
-                                <img className='logo_img' src={companyLogo5} alt='Company LOGO' />
-                            </Link>
-                        </li>
-                        <li className='logo_li'>
-                            <Link className='logo_linkk'>
-                                <img className='logo_img' src={companyLogo6} alt='Hyper Best Company LOGO' />
-                            </Link>
-                        </li>
+                        {CompanySectionData.map((item) => (
+                            <li className='logo_li' key={item.id}>
+                                <Link className='logo_linkk'>
+                                    <img className='logo_img' src={item.logoImage} alt={item.companyTitle} />
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
             </div>

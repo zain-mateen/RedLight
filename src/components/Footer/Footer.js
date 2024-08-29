@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.scss';
 
-import brandLogo from '../../img/brand logo.png'
-import leftPositionImage from '../../img/footer-position-img.png'
+import brandLogo from '../../img/brand logo.png';
+import leftPositionImage from '../../img/footer-position-img.png';
 import ThemeBtn from '../ThemeBtn/ThemeBtn';
 import ThemeInput from '../ThemeInput/ThemeInput';
+import { FooterContactData, FooterNavigationData, SocialIcons } from '../../Data';
 
 const Footer = () => {
     return (
@@ -53,156 +54,46 @@ const Footer = () => {
                                 </p>
                                 <div className='social_otr'>
                                     <ul className='social_ul'>
-                                        <li className='social_li'>
-                                            <a className='social_a' href='/'>
-                                                <i className="social_icon ri-facebook-fill"></i>
-                                            </a>
-                                        </li>
-                                        <li className='social_li'>
-                                            <a className='social_a' href='/'>
-                                                <i className="social_icon ri-instagram-line"></i>
-                                            </a>
-                                        </li>
-                                        <li className='social_li'>
-                                            <a className='social_a' href='/'>
-                                                <i className="social_icon ri-twitter-fill"></i>
-                                            </a>
-                                        </li>
-                                        <li className='social_li'>
-                                            <a className='social_a' href='/'>
-                                                <i className="social_icon ri-linkedin-fill"></i>
-                                            </a>
-                                        </li>
+                                        {SocialIcons.map((icon) => (
+                                            <li className='social_li' key={icon.id}>
+                                                <a className='social_a' href='/'>{icon.icon}</a>
+                                            </li>    
+                                        ))}
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div className='col-lg-3 col-md-6 col-sm-6 col_navigation_otr'>
-                            <div className='col_navigation_inr'>
-                                <p className='heading heading-lm'>Services</p>
-                                <ul className='navigation_ul'>
-                                    <li className='navigation_li'>
-                                        <Link className='navigation_linkk' to='/services'>
-                                            <i className="icon ri-arrow-right-s-fill"></i>
-                                            <span>
-                                                Security Training
-                                            </span>
-                                        </Link>
-                                    </li>
-                                    <li className='navigation_li'>
-                                        <Link className='navigation_linkk' to='/services'>
-                                            <i className="icon ri-arrow-right-s-fill"></i>
-                                            <span>
-                                                Cloud Security
-                                            </span>
-                                        </Link>
-                                    </li>
-                                    <li className='navigation_li'>
-                                        <Link className='navigation_linkk' to='/services'>
-                                            <i className="icon ri-arrow-right-s-fill"></i>
-                                            <span>
-                                                Secure Mangaged IT
-                                            </span>
-                                        </Link>
-                                    </li>
-                                    <li className='navigation_li'>
-                                        <Link className='navigation_linkk' to='/services'>
-                                            <i className="icon ri-arrow-right-s-fill"></i>
-                                            <span>
-                                                Data Privacy
-                                            </span>
-                                        </Link>
-                                    </li>
-                                    <li className='navigation_li'>
-                                        <Link className='navigation_linkk' to='/services'>
-                                            <i className="icon ri-arrow-right-s-fill"></i>
-                                            <span>
-                                                Industry Certified
-                                            </span>
-                                        </Link>
-                                    </li>
-                                    <li className='navigation_li'>
-                                        <Link className='navigation_linkk' to='/services'>
-                                            <i className="icon ri-arrow-right-s-fill"></i>
-                                            <span>
-                                                Threat Intelligence
-                                            </span>
-                                        </Link>
-                                    </li>
-                                </ul>
+                        {FooterNavigationData.map((item) => (
+                            <div key={item.id} className={`col_navigation_otr ${item.className}`}>
+                                <div className="col_navigation_inr">
+                                    <p className='heading heading-lm'>{item.heading}</p>
+                                    <ul className="navigation_ul">
+                                        {item.NavigationItems.map((navigate) => (
+                                            <li className="navigation_li" key={navigate.id}>
+                                                <Link className="navigation_linkk" to={navigate.link}>
+                                                    {navigate.icon}
+                                                    <span>{navigate.name}</span>
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div className='col-lg-2 col-md-6 col-sm-6 col_navigation_otr'>
-                            <div className='col_navigation_inr'>
-                                <p className='heading heading-lm'>Support</p>
-                                <ul className='navigation_ul'>
-                                    <li className='navigation_li'>
-                                        <Link className='navigation_linkk'>
-                                            <i className="icon ri-arrow-right-s-fill"></i>
-                                            <span>
-                                                Support
-                                            </span>
-                                        </Link>
-                                    </li>
-                                    <li className='navigation_li'>
-                                        <Link className='navigation_linkk' to='/contact-us'>
-                                            <i className="icon ri-arrow-right-s-fill"></i>
-                                            <span>
-                                                Contact Us
-                                            </span>
-                                        </Link>
-                                    </li>
-                                    <li className='navigation_li'>
-                                        <Link className='navigation_linkk'>
-                                            <i className="icon ri-arrow-right-s-fill"></i>
-                                            <span>
-                                                Knowledge Base
-                                            </span>
-                                        </Link>
-                                    </li>
-                                    <li className='navigation_li'>
-                                        <Link className='navigation_linkk' to='/about'>
-                                            <i className="icon ri-arrow-right-s-fill"></i>
-                                            <span>
-                                                About Us
-                                            </span>
-                                        </Link>
-                                    </li>
-                                    <li className='navigation_li'>
-                                        <Link className='navigation_linkk' to='/faq'>
-                                            <i className="icon ri-arrow-right-s-fill"></i>
-                                            <span>
-                                                FAQ
-                                            </span>
-                                        </Link>
-                                    </li>
-                                    <li className='navigation_li'>
-                                        <Link className='navigation_linkk' to='/pricing'>
-                                            <i className="icon ri-arrow-right-s-fill"></i>
-                                            <span>
-                                                Partnerships
-                                            </span>
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        ))}
                         <div className='col-lg-3 col_contact_otr'>
                             <div className='col_contact_inr'>
                                 <p className='heading heading-lm'>Get in Touch</p>
                                 <ul className='contact_ul'>
-                                    <li className='contact_li'>
-                                        <p className='text heading-sm'>Email:</p>
-                                        <a className='text_link heading-s' href='mailto:zainmateen259@gmail.com'>zainmateen259@gmail.com</a>
-                                    </li>
-                                    <li className='contact_li'>
-                                        <p className='text heading-sm'>Phone:</p>
-                                        <a className='text_link heading-s' href='tel:03221713121'>03221713121</a>
-                                    </li>
-                                    <li className='contact_li'>
-                                        <p className='text heading-sm'>Address:</p>
-                                        <p className='text_address heading-s'>King Street Melbourne, 3000, Australia</p>
-                                    </li>
+                                    {FooterContactData.map((item) => (
+                                        <li key={item.id} className='contact_li'>
+                                            <p className='text heading-sm'>{item.heading}</p>
+                                            {item.link ? (
+                                                <a className='text_link heading-s' href={item.link}>{item.text}</a>
+                                            ) : (
+                                                <p className='text_address heading-s'>{item.text}</p>
+                                            )}
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
                         </div>
@@ -221,4 +112,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default Footer;

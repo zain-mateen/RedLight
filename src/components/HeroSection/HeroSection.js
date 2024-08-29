@@ -2,7 +2,7 @@ import React from 'react';
 import './HeroSection.scss';
 
 import heroSectionImage from '../../img/hero-img.png'
-import { HeroSectionCartData } from './HeroSectionCartArray';
+import { HeroSectionCartData, SocialIcons } from '../../Data';
 import HeroSectionCart from './HeroSectionCart';
 import ThemeBtn from '../ThemeBtn/ThemeBtn';
 import { Link } from 'react-router-dom';
@@ -28,33 +28,18 @@ const HeroSection = () => {
                                 </Link>
                                 <div className='action_otr'>
                                     <div className='play_btn'>
-                                        <i class="icon ri-play-fill"></i>
+                                        <i className="icon ri-play-fill"></i>
                                     </div>
                                 </div>
                             </div>
                             <div className='social_otr'>
                                 <div className='social_line'></div>
                                 <ul className='social_ul'>
-                                    <li className='social_li'>
-                                        <a className='social_a' href='/'>
-                                            <i class="social_icon ri-facebook-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li className='social_li'>
-                                        <a className='social_a' href='/'>
-                                            <i class="social_icon ri-instagram-line"></i>
-                                        </a>
-                                    </li>
-                                    <li className='social_li'>
-                                        <a className='social_a' href='/'>
-                                            <i class="social_icon ri-twitter-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li className='social_li'>
-                                        <a className='social_a' href='/'>
-                                            <i class="social_icon ri-linkedin-fill"></i>
-                                        </a>
-                                    </li>
+                                    {SocialIcons.map((icon) => (
+                                        <li className='social_li' key={icon.id}>
+                                            <a className='social_a' href='/'>{icon.icon}</a>
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
                         </div>

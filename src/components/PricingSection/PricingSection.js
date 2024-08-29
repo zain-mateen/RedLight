@@ -1,7 +1,7 @@
 import React from 'react';
 import HeaderInner from '../Header/HeaderInner';
 import './PricingSection.scss';
-import { PricingSectionData } from './PricingSectionArray';
+import { PricingSectionData } from '../../Data';
 import PricingCart from './PricingCart';
 
 import positionImage from '../../img/chooseUs-position-img.png'

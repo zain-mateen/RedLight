@@ -5,9 +5,7 @@ import PagesHeader from '../../components/Header/PagesHeader'
 import faqImage from '../../img/faq-section-img.png'
 import { Accordion } from 'react-bootstrap'
 import FaqCart from '../../components/FaqSection/FaqCart'
-import { FaqPageData } from './FaqPageArray'
-import { FaqPageSecondData } from './FaqPageArray2'
-import { FaqPageThirdData } from './FaqPageArray3'
+import { FaqPageData, FaqPageSecondData, FaqPageThirdData } from '../../Data'
 
 const FaqPage = () => {
     return (

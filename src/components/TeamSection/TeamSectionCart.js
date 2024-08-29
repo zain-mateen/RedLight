@@ -17,21 +17,21 @@ function TeamSectionCart(props) {
                         {props.TeamCart_Instagram && (
                             <li className="social_li">
                                 <a className="social_linkk" href={props.TeamCart_Instagram}>
-                                    <i class="social_icon ri-instagram-line"></i>
+                                    <i className="social_icon ri-instagram-line"></i>
                                 </a>
                             </li>
                         )}
                         {props.TeamCart_Facebook && (
                             <li className="social_li">
                                 <a className="social_linkk" href={props.TeamCart_Facebook}>
-                                    <i class="social_icon ri-facebook-fill"></i>
+                                    <i className="social_icon ri-facebook-fill"></i>
                                 </a>
                             </li>
                         )}
                         {props.TeamCart_Twitter && (
                             <li className="social_li">
                                 <a className="social_linkk" href={props.TeamCart_Twitter}>
-                                    <i class="social_icon ri-twitter-fill"></i>
+                                    <i className="social_icon ri-twitter-fill"></i>
                                 </a>
                             </li>
                         )}

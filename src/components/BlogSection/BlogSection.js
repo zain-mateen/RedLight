@@ -1,7 +1,7 @@
 import React from 'react';
 
 import HeaderInner from '../Header/HeaderInner'
-import { BlogSectionData } from './BlogSectionArray';
+import { BlogSectionData } from '../../Data';
 import BlogSectionCart from './BlogSectionCart';
 
 const BlogSection = () => {

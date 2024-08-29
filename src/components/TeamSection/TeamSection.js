@@ -1,7 +1,7 @@
 import React from 'react';
 import './TeamSection.scss';
 import HeaderInner from '../Header/HeaderInner';
-import { TeamSectionData } from './TeamSectionArray';
+import { TeamSectionData } from '../../Data';
 import TeamSectionCart from './TeamSectionCart';
 
 const TeamSection = () => {

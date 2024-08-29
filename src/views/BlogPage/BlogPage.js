@@ -1,7 +1,7 @@
 import React from 'react';
 import './BlogPage.scss';
 import PagesHeader from '../../components/Header/PagesHeader';
-import { BlogPageData } from './BlogPageArray';
+import { BlogPageData} from '../../Data';
 import BlogPageCart from './BlogPageCart';
 import BlogPageRightContent from './BlogPageRightContent';
 
@@ -18,18 +18,9 @@ const BlogPage = () => {
                 <div className='row row_custom'>
                     <div className='col-lg-8 col_blogContent_otr'>
                         <div className='col_blogContent_inr'>
-                            {BlogPageData.map((data)=>{
-                                return (
-                                    <BlogPageCart 
-                                        BlogPageCartClass = ''
-                                        BlogPageCartImage = {data.BlogPageCartImage}
-                                        BlogPageCartHeading = {data.BlogPageCartHeading}
-                                        BlogPageCartAuthorName = {data.BlogPageCartAuthorName}
-                                        BlogPageCartBlogDate = {data.BlogPageCartBlogDate}
-                                        BlogPageCartDescription = {data.BlogPageCartDescription}
-                                    />
-                                )
-                            })}
+                            {BlogPageData.map((blog) => (
+                                <BlogPageCart key={blog.id} blog={blog} />
+                            ))}
                         </div>
                     </div>
                     <div className='col-lg-4'>

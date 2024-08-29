@@ -6,7 +6,7 @@ import 'swiper/css';
 import HeaderInner from '../Header/HeaderInner';
 import TestimonialCart from './TestimonialCart';
 
-import creatorImage1 from '../../img/testimonial-img1.png'
+import { TestimonialData } from '../../Data';
 
 const TestimonialSection = () => {
     return (
@@ -23,38 +23,16 @@ const TestimonialSection = () => {
                         onSlideChange={() => console.log('slide change')}
                         onSwiper={(swiper) => console.log(swiper)}
                     >
-                        <SwiperSlide>
-                            <TestimonialCart 
-                                TestimonialCartCreatorProfileImage={creatorImage1}
-                                TestimonialCartHeading="Spencer Simpson"
-                                TestimonialCartProfession="CEO - Company"
-                                TestimonialCartDescription="Lorem ipsum dolor sit amet consectetuer adipiscing elitenea ncom modo ligula eget dolor aenean massa cum sociis nato que penatibus etmagnis dis parturient montes"
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <TestimonialCart 
-                                TestimonialCartCreatorProfileImage={creatorImage1}
-                                TestimonialCartHeading="Spencer Simpson"
-                                TestimonialCartProfession="CEO - Company"
-                                TestimonialCartDescription="Lorem ipsum dolor sit amet consectetuer adipiscing elitenea ncom modo ligula eget dolor aenean massa cum sociis nato que penatibus etmagnis dis parturient montes"
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <TestimonialCart 
-                                TestimonialCartCreatorProfileImage={creatorImage1}
-                                TestimonialCartHeading="Spencer Simpson"
-                                TestimonialCartProfession="CEO - Company"
-                                TestimonialCartDescription="Lorem ipsum dolor sit amet consectetuer adipiscing elitenea ncom modo ligula eget dolor aenean massa cum sociis nato que penatibus etmagnis dis parturient montes"
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <TestimonialCart 
-                                TestimonialCartCreatorProfileImage={creatorImage1}
-                                TestimonialCartHeading="Spencer Simpson"
-                                TestimonialCartProfession="CEO - Company"
-                                TestimonialCartDescription="Lorem ipsum dolor sit amet consectetuer adipiscing elitenea ncom modo ligula eget dolor aenean massa cum sociis nato que penatibus etmagnis dis parturient montes"
-                            />
-                        </SwiperSlide>
+                        {TestimonialData.map((testimonial) => (
+                            <SwiperSlide key={testimonial.id}>
+                                <TestimonialCart
+                                    TestimonialCartCreatorProfileImage={testimonial.profileImage}
+                                    TestimonialCartHeading={testimonial.heading}
+                                    TestimonialCartProfession={testimonial.profession}
+                                    TestimonialCartDescription={testimonial.description}
+                                />
+                            </SwiperSlide>
+                        ))}
                     </Swiper>
                 </div>
             </div>

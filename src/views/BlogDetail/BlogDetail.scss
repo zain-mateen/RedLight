@@ -1,6 +1,6 @@
 @import '../../common-style/variables.scss';
 
-.AvoidMistakesInSocialMediaPosts{
+.BlogDetail{
     margin: 112px 0;
 
     @media (max-width: 992px) {
@@ -106,23 +106,39 @@
                             }
                         }
 
-                        .desc{
-                            color: $Grey_text;
-                        }
+                        .article_container{
 
-                        .sub_heading{
-                            color: $White;
-                            margin: 12px 0;
-                        }
-
-                        .list_ul{
-                            padding-left: 20px;
-
-                            .list_li{
-                                list-style: disc;
+                            .desc{
                                 color: $Grey_text;
                             }
+
+                            .heading_desc_main{
+
+                                .heading{
+                                    color: $White;
+                                    margin: 12px 0;
+                                }
+
+                                .desc{
+                                    color: $Grey_text;
+                                }
+
+                                .list_ul{
+                                    padding-left: 20px;
+                                    margin-top: 12px;
+
+                                    &:last-child{
+                                        margin-bottom: 12px;
+                                    }
+        
+                                    .list_li{
+                                        list-style: disc;
+                                        color: $Grey_text;
+                                    }
+                                }
+                            }
                         }
+
                     }
 
                     .form_otr{

@@ -2,7 +2,7 @@ import React from 'react';
 import './TeamPage.scss';
 
 import PagesHeader from '../../components/Header/PagesHeader'
-import { TeamPageData } from './TeamPageArray';
+import { TeamPageData } from '../../Data';
 import TeamSectionCart from '../../components/TeamSection/TeamSectionCart'
 
 

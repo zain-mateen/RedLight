@@ -16,7 +16,7 @@ function ChooseUsSectionCart(props) {
                     <div className='action_otr'>
                         <Link className='learnMore_btn' to='/services'>
                             <p className='learnMore_btn_text heading-s'>Learn More</p>
-                            <i class="learnMore_btn_icon ri-arrow-drop-right-line"></i>
+                            <i className="learnMore_btn_icon ri-arrow-drop-right-line"></i>
                         </Link>
                     </div>
                 </div>

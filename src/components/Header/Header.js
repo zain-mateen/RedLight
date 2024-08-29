@@ -9,7 +9,7 @@ import ThemeBtn from '../ThemeBtn/ThemeBtn';
 
 import './Header.scss';
 import CartIcon from '../CartIcon/CartIcon';
-import { NavigationItems } from '../../Data';
+import { ResponsiveNavigationData, NavigationItems, SocialIcons } from '../../Data';
 
 const Header = () => {
     const [show, setShow] = useState(false);
@@ -81,107 +81,44 @@ const Header = () => {
                 <Offcanvas.Body>
                     <nav className='nav_otr'>
                         <ul className='menu_ul'>
-                            <li className='menu_li'>
-                                <Link className='menu_linkk heading-m' to='/'>
-                                    <span>
-                                        Home
-                                    </span>
-                                </Link>
-                            </li>
-                            <li className='menu_li'>
-                                <Link className='menu_linkk heading-m' to='/about'>
-                                    <span>
-                                        About
-                                    </span>
-                                </Link>
-                            </li>
-                            <li className='menu_li'>
-                                <Link className='menu_linkk heading-m' to='/services'>
-                                    <span>
-                                        Services
-                                    </span>
-                                </Link>
-                            </li>
-                            <li className='menu_li'>
-                                <Link className='menu_linkk heading-m' to='/pricing'>
-                                    <span>
-                                        Pricing
-                                    </span>
-                                </Link>
-                            </li>
-                            <li className='menu_li'>
-                                <Accordion>
-                                    <Accordion.Item eventKey='0'>
-                                        <Accordion.Header>
-                                            <span className='text heading-m'>Pages</span>
-                                            <i class="arrow ri-arrow-down-s-line"></i>
-                                        </Accordion.Header>
-                                        <Accordion.Body>
-                                            <ul className='dropdown_ul'>
-                                                <li className='dropdown_li'>
-                                                    <Link className='dropdown_linkk heading-s' to='/team'>
-                                                        <span>
-                                                            Team
-                                                        </span>
-                                                    </Link>
-                                                </li>
-                                                <li className='dropdown_li'>
-                                                    <Link className='dropdown_linkk heading-s' to='/faq'>
-                                                        <span>
-                                                            Faq
-                                                        </span>
-                                                    </Link>
-                                                </li>
-                                                <li className='dropdown_li'>
-                                                    <Link className='dropdown_linkk heading-s' to='/testimonials'>
-                                                        <span>
-                                                            Testimonials
-                                                        </span>
-                                                    </Link>
-                                                </li>
-                                                <li className='dropdown_li'>
-                                                    <Link className='dropdown_linkk heading-s' to='/shop'>
-                                                        <span>
-                                                            Shop
-                                                        </span>
-                                                    </Link>
-                                                </li>
-                                                <li className='dropdown_li'>
-                                                    <Link className='dropdown_linkk heading-s' to='/blog'>
-                                                        <span>
-                                                            Blog
-                                                        </span>
-                                                    </Link>
-                                                </li>
-                                            </ul>         
-                                        </Accordion.Body>
-                                    </Accordion.Item>
-                                </Accordion>
-                            </li>
+                            {ResponsiveNavigationData.map((item) => (
+                                <li className='menu_li' key={item.id}>
+                                    {!item.isDropdown ? (
+                                        <Link className='menu_linkk heading-m' to={item.link}>
+                                            <span>{item.name}</span>
+                                        </Link>
+                                    ) : (
+                                        <Accordion>
+                                            <Accordion.Item eventKey={item.id.toString()}>
+                                                <Accordion.Header>
+                                                    <span className='text heading-m'>{item.name}</span>
+                                                    <i className="arrow ri-arrow-down-s-line"></i>
+                                                </Accordion.Header>
+                                                <Accordion.Body>
+                                                    <ul className='dropdown_ul'>
+                                                        {item.dropdownItems.map((dropdownItem) => (
+                                                            <li className='dropdown_li' key={dropdownItem.id}>
+                                                                <Link className='dropdown_linkk heading-s' to={dropdownItem.link}>
+                                                                    <span>{dropdownItem.name}</span>
+                                                                </Link>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
+                                        </Accordion>
+                                    )}
+                                </li>
+                            ))}
                         </ul>
                     </nav>
                     <div className='social_otr'>
                         <ul className='social_ul'>
-                            <li className='social_li'>
-                                <a className='social_a' href='/'>
-                                    <i class="social_icon ri-facebook-fill"></i>
-                                </a>
-                            </li>
-                            <li className='social_li'>
-                                <a className='social_a' href='/'>
-                                    <i class="social_icon ri-instagram-line"></i>
-                                </a>
-                            </li>
-                            <li className='social_li'>
-                                <a className='social_a' href='/'>
-                                    <i class="social_icon ri-twitter-fill"></i>
-                                </a>
-                            </li>
-                            <li className='social_li'>
-                                <a className='social_a' href='/'>
-                                    <i class="social_icon ri-linkedin-fill"></i>
-                                </a>
-                            </li>
+                            {SocialIcons.map((icon) => (
+                                <li className='social_li' key={icon.id}>
+                                    <a className='social_a' href='/'>{icon.icon}</a>
+                                </li>    
+                            ))}
                         </ul>
                     </div>
                     <div className='action_otr'>

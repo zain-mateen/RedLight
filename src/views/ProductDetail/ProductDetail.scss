@@ -73,24 +73,24 @@
                         flex-wrap: wrap;
                         gap: 8px 12px;
 
-                        .quantity_otr{
+                        .quantity_main{
                             display: flex;
                             align-items: center;
                             border: 2px solid $White;
                             overflow: hidden;
-                            height: 64px;
+                            height: 50px;
                             border-radius: 4px;
 
                             @media (max-width: 768px) {
                                 height: 48px;
                             }
 
-                            .quantity_text{
+                            .value{
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                                width: 100px;
-                                height: 64px;
+                                width: 72px;
+                                height: 50px;
                                 color: $White;
 
                                 @media (max-width: 768px) {
@@ -99,13 +99,17 @@
                                 }
                             }
 
-                            .increment_decrement_text{
-                                width: 64px;
-                                height: 64px;
+                            .icon_otr{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 50px;
+                                height: 50px;
                                 background-color: $White;
                                 border: none;
                                 outline: none;
                                 transition: .3s;
+                                cursor: pointer;
 
                                 @media (max-width: 768px) {
                                     width: 48px;

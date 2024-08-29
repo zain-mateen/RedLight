@@ -10,18 +10,15 @@ import FaqPage from './views/FaqPage/FaqPage';
 import ShopPage from './views/ShopPage/ShopPage';
 import ProductDetailPage from './views/ProductDetail/ProductDetail';
 import BlogPage from './views/BlogPage/BlogPage';
-import BlogDetailPage from './views/BlogDetail/AvoidMistakesInSocialMediaPosts';
+import BlogDetail from './views/BlogDetail/BlogDetail';
 import ContactPage from './views/ContactPage/ContactPage';
 import TestimonialsPage from './views/TestimonialsPage/TestimonialsPage';
 import Checkout from './views/Checkout/Checkout';
 import Footer from './components/Footer/Footer';
 
-import ScrollToTopOnMount from './components/ScrollToTopOnMount/ScrollToTopOnMount';
-
 function App() {
   return (
     <div>
-      <ScrollToTopOnMount />
       <Header />
       <Routes>
         <Route path='/' element={<LandingPage />}/>
@@ -32,9 +29,9 @@ function App() {
         <Route path='/faq' element={<FaqPage />}/>
         <Route path='/testimonials' element={<TestimonialsPage />}/>
         <Route path='/shop' element={<ShopPage />}/>
-        <Route path='/product-detail' element={<ProductDetailPage />}/>
+        <Route path='/product-detail/:id' element={<ProductDetailPage />}/>
         <Route path='/blog' element={<BlogPage />}/>
-        <Route path='/blog-detail' element={<BlogDetailPage />}/>
+        <Route path='/blog-detail/:id' element={<BlogDetail />}/>
         <Route path='/contact-us' element={<ContactPage />}/>
         <Route path='/checkout' element={<Checkout />}/>
       </Routes>

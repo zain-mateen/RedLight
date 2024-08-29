@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import ThemeBtn from '../ThemeBtn/ThemeBtn'
-import { CyberSecurityProviderSectionStateCartData } from './CyberSecurityProviderSectionStateCartArray';
+import { CyberSecurityProviderSectionStateCartData } from '../../Data';
 import CyberSecuritySectionStateCart from './CyberSecurityProviderSectionStateCart';
 
 import './CyberSecurityProviderSection.scss';

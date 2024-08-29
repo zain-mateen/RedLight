@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import './ShopPage.scss';
 import PagesHeader from '../../components/Header/PagesHeader';
 import ShopCart from './ShopCart';
-import { ShopPageData } from '../../Data';
 import { ProductsContext } from '../../context/ProductContext';
 
 const ShopPage = () => {
